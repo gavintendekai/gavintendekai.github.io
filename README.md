@@ -1,3 +1,5 @@
 # gavintendekai.github.io
 Welcome to my Coursera Page!
-theme: cayman
+
+markdown: kramdown
+theme: Midnight
