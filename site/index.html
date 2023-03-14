@@ -53,16 +53,7 @@ img
 	padding: 80 px;
 	text-align: center;
 }
-.slideshow-container2{
-	position: relative;
-	background: hotpink;
 
-}
-.mySlides2{
-	display: none;
-	padding: 80 px;
-	text-align: center;
-}
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -86,7 +77,7 @@ img
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
-  color: deeppink;
+  color: skyblue;
 }
 
 /* The dot/bullet/indicator container */
@@ -133,6 +124,7 @@ img
 	<div class="mySlides"><li><a href="#CSS">Power of CSS</a></li></div>
 
 	<div class="mySlides"><li><a href="#CSSAnatomy">Anatomy of CSS</a></li></div>
+	<div class="mySlides"><li><a href="#Combselectors">Combining Selectors</a></li></div>
 
 	<div class="mySlides"><li><a href="https://github.com/jhu-ep-coursera/fullstack-course4/blob/master/FAQ.md">FAQ</a></li></div>
 </ol>
@@ -179,7 +171,7 @@ function showSlides(n) {
 
 
 <div>
-<!-- Better to use CSS here, will learn how and edit --> <center><img src="https://64.media.tumblr.com/8d085054120df02619d3f0260c3a23c4/tumblr_o0hottQths1r2q2xko7_r1_500.gifv" width="200" height="220" alt = "https://media3.giphy.com/media/85AU17hrcbCCMko/giphy.gif?cid=ecf05e47hbtsqpfoaaqi2l4aqp4kgqzo3bhbjqf0195owk1h&rid=giphy.gif&ct=g">
+<!-- Better to use CSS here, will learn how and edit --> <center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/pageguy.gif?raw=true" width="200" height="220" alt = "https://media3.giphy.com/media/85AU17hrcbCCMko/giphy.gif?cid=ecf05e47hbtsqpfoaaqi2l4aqp4kgqzo3bhbjqf0195owk1h&rid=giphy.gif&ct=g">
 </div>
 
 <section id ='Introduction'>
@@ -248,32 +240,50 @@ function showSlides(n) {
 	<p>
 	A CSS rule consists of 2 main parts:</p>
 	<ol>
-		<li>The first part is the <b>selector</b>, which says what ever rules I am going to specify should apply to every kind of element in my page: <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/selector.JPG?raw=true" width="500" height="350"> </p><p>In this case the rule is being applied to all the paragraphs "p" in the page. </p></li>
+		<li>The first part is the <b>selector</b>, which says what ever rules I am going to specify should apply to every kind of element in my page: <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/selector.JPG?raw=true" width="500" height="350"></center></p><p>In this case the rule is being applied to all the paragraphs "p" in the page. </p></li>
 		
-		<li>The second part is the <b>declaration</b> which is inside the brackets and it consits of two parts the property and value: <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/declaration.JPG?raw=true" width="400" height="250"></p><p>For every property there is a set number of values such "blue" or a numerical value. The property is predefined by CSS speficification. There can zero or more declarations:</p> <p><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/moredeclaration.JPG?raw=true" width="400" height="250"></p></li>
+		<li>The second part is the <b>declaration</b> which is inside the brackets and it consits of two parts the property and value: <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/declaration.JPG?raw=true" width="400" height="250"></center></p><p>For every property there is a set number of values such "blue" or a numerical value. The property is predefined by CSS speficification. There can zero or more declarations:</p> <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/moredeclaration.JPG?raw=true" width="400" height="250"></center></p></li>
 		
 		<li>The collection of the CSS Rules is called a stylesheet:<p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/stylesheet.JPG?raw=true" width="400" height="250">
-		</p></li>
+		</p></center></li>
 	</ol>
 
 	<p>
 	There are three types of selectors: element selector, class selector, and id selector </p>
 	<ol>
-		<li>The element selector refers to you specifyting the element selector such as "p" or "div". <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/selector.JPG?raw=true"></p>
+		<li>The element selector refers to you specifyting the element selector such as "p" or "div". <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/selector.JPG?raw=true"></center></p>
 		</li>
-		<li>The class selector is specified with a dot and the name of the class. You define the class with a dot and use it without a dot. <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/cselector.JPG?raw=true"></p>
+		<li>The class selector is specified with a dot and the name of the class. You define the class with a dot and use it without a dot. <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/cselector.JPG?raw=true"></center></p>
 		</li>
 		<li>The id selector is specified with a pound sign "#" and it is the value of some id in the html document. E.g., the class speficied "#blue &#123;color: blue;&#125;," can be used inside a div element as an id, &lt;div class = "blue"&gt;." 
-		<p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/idselector.JPG?raw=true"></p>
+		<p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/idselector.JPG?raw=true"></center></p>
 		</li>
-		<li>Selectors can also be grouped together. Also you can use "*" to define all elements on the page. <p> <center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/groupingselectors.JPG?raw=true"></p>
+		<li>Selectors can also be grouped together. Also you can use "*" to define all elements on the page. <p> <center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/groupingselectors.JPG?raw=true"></center></p>
 		</li>
 	</ol>
 
-	</div> 
-</div>
+	</div>
 </section>
 
+<section id = "Combselectors">
+<h1>Combining Selectors</h1>
+	<div>
+	<p>Combining selectors is a more precise way to target dumb elements. Here we will look some the most common ways of combining selectors.</p>
+	<ol>
+		<li>The first one is a "p" selector which has a "dot" big class selector: <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_1.JPG?raw=true" width="500" height="350"></center></p><p>This expresses that we want to target every "p" element that has an attribute class equal to big. Note: there are no spaces between "p" and "dot big".</p><p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_2.JPG?raw=true" width="500" height="350"></center></p><p>Notice here that only the "p" elements that have a class equal to big will be affected while the "div" element is unaffected.</p></li>
+		
+		<li>The second type of selector is a child selector. The sytanx is a selector followed by another selector. <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_3.JPG?raw=true" width="400" height="250"></center></p><p> This way of combining is read from right to left. Meaning that the "p" element is a direct child of an "article" element.</p><p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_4.JPG?raw=true" width="400" height="250"></center></p> The only "p" element that is affected is a direct child to "article" as opposed to a regular "p" which will be unaffected. Also note, "p" not a direct child of "article" will be unaffected. Since it contained in the "div"  it is not a direct child of "div".</li>
+		
+		<li>Another type of selector is a descendent selector. The syntax is selector space selector. It targets every "p" that is inside (at any level) of article. <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_5.JPG?raw=true" width="400" height="250" width="400" height="250"></center></p>Even if "p" is not a direct child of "article," but as long one of its parents in its ancestry is an "article" the rule will apply.<p><p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_7.JPG?raw=true" width="400" height="250" width="400" height="250"></center></p><p> The both "p" elements in "article" will turn blue, despite the second being part of "div" and not a direct child.
+
+		<li>Selector combinations are not limited to element selectors.<p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_6.JPG?raw=true" width="400" height="250" width="400" height="250"></center></p> The first combination, ".colored p," says that every p that is inside, at any level, an element with a class equal to coloured will turn blue. The second one says taht every element with class = ".coloured" that is a direct child of "article" will turn blue.
+
+		</li>
+
+	</li>
+	</ol>
+</div>
+</section>
 
 <footer> 
 <span style="text-align: center;">
