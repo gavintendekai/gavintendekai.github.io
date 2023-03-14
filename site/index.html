@@ -1,33 +1,192 @@
 <!DOCTYPE html>
 <html lang ="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Coursera Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson Page</title>
+<style type="text/css">
+h1,h2,h3,h4,h5 {
+	font-family: cursive ; 
+	width: 200;
+	padding: 10px;
+	margin-bottom: 20px;
+	color: white; 
+	border-radius: 15px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px; 
+	text-align: center;
+	background: skyblue;
+}
+p,
+{
+	text-align: left;
+}
+*{
+	background: lightpink;
+	font-family: cursive ;
+}
+ol
+{
+ 	box-sizing: border-box;
+ 	text-align: left;
+}
+ul
+{
+ 	box-sizing: border-box;
+ 	text-align: left;
+}
+img 
+{ 
+
+ 	height: auto; width: 5%; min-width: 10em;
+
+}
+.slideshow-container{
+	position: relative;
+	background: hotpink;
+
+}
+.mySlides{
+	display: none;
+	padding: 80 px;
+	text-align: center;
+}
+.slideshow-container2{
+	position: relative;
+	background: hotpink;
+
+}
+.mySlides2{
+	display: none;
+	padding: 80 px;
+	text-align: center;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: deeppink;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 10px;
+    background: #lightblue;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 1px;
+  background-color: #palegoldenrod;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+</style>
 </head>
 <body>
 
 <!-- This is my first commment! Let's go! --> 
-<h1 style="color: 
-white; font-size: 25px; text-align: center; background: skyblue;">Coursera: HTML, CSS, Javascript</h1>
-<p style="color: black; text-align: center; ">Here is an index of the main lessons:</p>
+<h1>HTML, CSS, and Java</h1>
 
-<ol>
-	<li><a href="#Introduction">Introduction</a></li>
-	<li><a href="#Structure">HTML Anatomy and Document Structure</a></li>
-	<li><a href="#CSS">Power of CSS</a></li>
-	<li><a href="#CSSAnatomy">Anatomy of CSS</a></li>
+<div class="slideshow-container">
+	<ol>
+	<div class="mySlides">
+		<li><a href="#Introduction">Introduction</a></li>
+	</div>
+	
+	<div class="mySlides">
+		<li><a href="#Structure">HTML Anatomy and Document Structure</a></li>
+	</div>
+	<div class="mySlides"><li><a href="#CSS">Power of CSS</a></li></div>
+
+	<div class="mySlides"><li><a href="#CSSAnatomy">Anatomy of CSS</a></li></div>
+
+	<div class="mySlides"><li><a href="https://github.com/jhu-ep-coursera/fullstack-course4/blob/master/FAQ.md">FAQ</a></li></div>
 </ol>
-Course <a href="https://github.com/jhu-ep-coursera/fullstack-course4/blob/master/FAQ.md">FAQ</a>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
 
-<!-- Better to use CSS here, will learn how and edit --> <img align = "right" src="https://64.media.tumblr.com/8d085054120df02619d3f0260c3a23c4/tumblr_o0hottQths1r2q2xko7_r1_500.gifv" width="200" height="280" alt = "https://media3.giphy.com/media/85AU17hrcbCCMko/giphy.gif?cid=ecf05e47hbtsqpfoaaqi2l4aqp4kgqzo3bhbjqf0195owk1h&rid=giphy.gif&ct=g">
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
 
-<section id ='Introduction'>
-<h2 style="color: 
-white; font-size: 20px; text-align: center; background: skyblue;"><b>Introduction</b></h2>
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
 
 <div>
-<p style="color: black; text-align: justify; ">In this page, I will talk about the lessons from Week 1. In the first week of instructions, we learned a bit about Github, Sumblime Text, the Command Line, and all sorts of neat commands. We got a brief introduction into HTML, CSS, and JavaScript.</p>
+<!-- Better to use CSS here, will learn how and edit --> <center><img src="https://64.media.tumblr.com/8d085054120df02619d3f0260c3a23c4/tumblr_o0hottQths1r2q2xko7_r1_500.gifv" width="200" height="220" alt = "https://media3.giphy.com/media/85AU17hrcbCCMko/giphy.gif?cid=ecf05e47hbtsqpfoaaqi2l4aqp4kgqzo3bhbjqf0195owk1h&rid=giphy.gif&ct=g">
+</div>
+
+<section id ='Introduction'>
+<h2>Introduction</h2>
+
+<div>
+<p>In this page, I will talk about the lessons from Week 1. In the first week of instructions, we learned a bit about Github, Sumblime Text, the Command Line, and all sorts of neat commands. We got a brief introduction into HTML, CSS, and JavaScript.</p>
 
 
 <ul>
@@ -60,21 +219,22 @@ white; font-size: 20px; text-align: center; background: skyblue;"><b>Introductio
 
 
 <section id = "Structure">
-<h3 style="color: 
-white; font-size: 20px; text-align: center; background: skyblue;">Anatomy, Structure, Content, Semantic elements of HTML</h3> 
-	<p> In lectures 3 and 4, we learned about the anatomy and document structure of html. </p> 
+<h3>Anatomy, Structure, Content, Semantic elements of HTML</h3> 
+<p> In lectures 3 and 4, we learned about the anatomy and document structure of html.</p> 
 
-	<p> Here is an example of an html line, "< p > </ p>'.</p> 
+	<p style="text-align: center;"> This is an example of an html line, "&lt;p&gt; &lt;/p&gt;".</p> 
 	<p> In the following, I will explain what each character means. </p>
-	<p>"< p >" or " < h1 >" or "< br >" are what is called <b> element names </b>.</p>
-	<p> "< p >" is an <b> opening tag </b> while "< /p > "is a <b>closing tag </b>. Some elements do not have a closing tag "< br >" and " < hr >" are good example of this.</p> <p> This is an example of an attribute within a tag, "< p id = "myId" > < /p >". An attribute can only be specified in the opening tag. </p> <p> This is an example of a no content tag "< p >< /p>". This tag is correct, while this tag "< p \>" is incorrect</p> <p> We also looked as some html tags such < html >, < head>, < meta >, and < title >. A key reminder is that html is rendered sequentially meaning top to bottom.</p>
+	<ul>
+		<li>"&lt;p&gt;" or " &lt;h1&gt;" or "&lt;br&gt;" are what is called <b> element names </b>.</li> <li> "&lt;p&gt;" is an <b> opening tag </b> while "&lt;/p&gt; "is a <b>closing tag </b>.</li> <li>Some elements do not have a closing tag, "&lt;br&gt;" and "&lt;hr&gt;" are good example of this.</p></li><p> <li>This is an example of an attribute within a tag, "&lt;p id = "myId"&gt; &lt;/p&gt;". An attribute can only be specified in the opening tag. </p> <p> </li> <li>This is an example of a no content tag "&lt;p&gt;&lt;/p&gt;". This tag is correct, while this tag "&lt;p\&gt;" is incorrect</p></li>
+	</ul>
+
+<p> We also looked as some html tags such &lt;html&gt;, &lt;head&gt;, &lt;meta&gt;, and&lt;title&gt;. A key reminder is that html is rendered sequentially meaning top to bottom.</p>
 </section>
 
 <section id="CSS">
-<h4 style="color: 
-white; font-size: 20px; text-align: center; background: skyblue;">Power of CSS</h4>
+<h4>Power of CSS</h4>
 <div>
-<p> CSS in an incredibly powerful technology. This tool helps to tailor how users absorb and relate to content. Structure alone enough. You need to style your content in way that pleasing to the user.</p>
+<p> CSS works by associating rules with HTML elements. CSS in an incredibly powerful technology. This tool helps to tailor how users absorb and relate to content. Structure alone enough. You need to style your content in way that pleasing to the user.</p>
 
 <ul><li>User experience of content matters</li></ul>
 
@@ -83,16 +243,35 @@ white; font-size: 20px; text-align: center; background: skyblue;">Power of CSS</
 </section>
 
 <section id ="CSSAnatomy">
-	<h5 style="color: 
-white; font-size: 20px; text-align: center; background: skyblue;">Anatomy of CSS Rule</h5>
+	<h5>Anatomy of a CSS Rule</h5>
 	<div>
 	<p>
-	A CSS rule consists of 4 parts.</p>
-
+	A CSS rule consists of 2 main parts:</p>
 	<ol>
-		<li>The first part is the selector, which says what ever rules I am going to specify should apply to every kind of element in my page: <img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/selector.JPG?raw=true" width="400" height="250"></li>
+		<li>The first part is the <b>selector</b>, which says what ever rules I am going to specify should apply to every kind of element in my page: <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/selector.JPG?raw=true" width="500" height="350"> </p><p>In this case the rule is being applied to all the paragraphs "p" in the page. </p></li>
+		
+		<li>The second part is the <b>declaration</b> which is inside the brackets and it consits of two parts the property and value: <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/declaration.JPG?raw=true" width="400" height="250"></p><p>For every property there is a set number of values such "blue" or a numerical value. The property is predefined by CSS speficification. There can zero or more declarations:</p> <p><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/moredeclaration.JPG?raw=true" width="400" height="250"></p></li>
+		
+		<li>The collection of the CSS Rules is called a stylesheet:<p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/stylesheet.JPG?raw=true" width="400" height="250">
+		</p></li>
+	</ol>
 
-	</div>
+	<p>
+	There are three types of selectors: element selector, class selector, and id selector </p>
+	<ol>
+		<li>The element selector refers to you specifyting the element selector such as "p" or "div". <p> <img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/selector.JPG?raw=true"></p>
+		</li>
+		<li>The class selector is specified with a dot and the name of the class. You define the class with a dot and use it without a dot. <p> <img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/cselector.JPG?raw=true"></p>
+		</li>
+		<li>The id selector is specified with a pound sign "#" and it is the value of some id in the html document. E.g., the class speficied "#blue &#123;color: blue;&#125;," can be used inside a div element as an id, &lt;div class = "blue"&gt;." 
+		<p> <img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/idselector.JPG?raw=true"></p>
+		</li>
+		<li>Selectors can also be grouped together. Also you can use "*" to define all elements on the page. <p> <img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/groupingselectors.JPG?raw=true"></p>
+		</li>
+	</ol>
+
+	</div> 
+</div>
 </section>
 
 
