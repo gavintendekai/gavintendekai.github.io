@@ -1,5 +1,5 @@
 h1{
-	font-family: sans-serif; 
+	font-family: monospace;
 	width: 200;
 	padding: 12px;
 	margin-bottom: 20px;
@@ -13,11 +13,14 @@ h1{
 	font-size: 23px; 
 	text-align: center;
 	background: lightblue;
+	font-style: oblique;
+	font-weight: bold;
+	text-transform: uppercase;
 
 }
 
 h2{
-	font-family: sans-serif; 
+	font-family: monospace;
 	width: 250px;
 	padding: 12px;
 	margin-bottom: 20px;
@@ -33,9 +36,16 @@ h2{
 }
 
 body{
+	margin: 0;
+	padding: 0;
 	background-color: whitesmoke;
-	font-family: sans-serif;
-	width: 200;
+	font-family: monospace;
+}
+
+#box {
+	background-color: blue;
+	padding: 10px 10px 10px 10px;
+
 }
 p
 {
