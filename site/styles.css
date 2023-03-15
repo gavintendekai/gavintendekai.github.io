@@ -55,28 +55,28 @@ ul
 }
 
 span {
-		border-radius: 40px;
-		padding: 8px;
-		border-bottom: solid;
-		position: relative;
-		margin-left: auto;
-		margin-right: auto;
-		font-size: 15px; 
-		text-align: center;
-		background: lightsalmon;
+			border-radius: 40px;
+			padding: 8px;
+			border-bottom: solid;
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 15px; 
+			text-align: center;
+			background: lightsalmon;
 	}
 
-#conflict span
- {
-		border-radius: 40px;
-		padding: 8px;
-		border-bottom: solid;
-		position: relative;
-		margin-left: auto;
-		margin-right: auto; 
-		text-align: center;
-	background: lightgreen
-}
+	#conflict span
+ 	{		
+			border-radius: 40px;
+			padding: 8px;
+			border-bottom: solid;
+			position: relative;
+			margin-left: auto;
+			margin-right: auto; 
+			text-align: center;
+			background: lightgreen
+	}
 
 
 img 
@@ -85,7 +85,11 @@ img
  	height: auto; width: 5%; min-width: 10em;
 
 }
-
+	.conflict img {
+					width: 200px;
+					height: 150px;
+				}
+	
 a:link, a:visited {
 	background-color: none;
 	color: black;

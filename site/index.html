@@ -242,7 +242,7 @@ function showSlides(n) {
 	<p>To understand how cascading works it is crucial to understand these four concepts:
 
 	<ol>
-		<li> <span>Origin or Origin precendence </span><p>
+		<li> <span>Origin or Origin Precendence </span><p>
 			<ul>
 				<li>When two declarations are in conflict, in other words they specify the same property for the same target, origin precedence rule kicks in, and it's a very simple rule. And the rule is, <b>the last declaration wins</b>.</li> 
 
@@ -258,8 +258,35 @@ function showSlides(n) {
 		</li>
 
 
-		<li><span>Inheritance</span> <p>The basic idea is that you have the document object model tree. And if you specify some CSS property on some element, all the children and grandchildren and so on and so on of that element will also inherit that property without you having to specify the property for each and every element. So for example, if I specify one property on the body tag, every element that is a child of a body tag, or even a child of a child of a body tag and so on, will inherit that property.</p> <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/inheritance.JPG?raw=true"></center></li>
-		<li><span>Specificity</span></li>
+		<li><span>Inheritance</span> 
+			<ul> 
+				<li><p>The basic idea is that you have the document object model tree. And if you specify some CSS property on some element, all the children and grandchildren and so on and so on of that element will also inherit that property without you having to specify the property for each and every element. So for example, if I specify one property on the body tag, every element that is a child of a body tag, or even a child of a child of a body tag and so on, will inherit that property.</p> <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/inheritance.JPG?raw=true"></center></p>
+				</li>
+			</ul>
+		</li>
+		<li><span>Specificity</span>
+			<ul>
+				<li><p>Specificity has a pretty simple rule,]and that the most specific selector combination wins.</p> <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/specificity.JPG?raw=true"></center></p>
+					</li>
+				<li>You think of the selectors as keeping a score, the selectors with highest score wins. The selector with highest score would be considered the most specific.
+			 		</li>
+				<li>
+				It's easier to calculate the score if you arrange the types of things that affect the score from left to right, with the left being the highest value of specificity. Then simply take your CSS rule and fill in the number of times you see a particular type of selector being used in it's proper location. The number that's created is your final score. On the screen, the most specific targeting that exists in CSS doesn't actually use any selectors at all and that is the style attribute on an element. The ID, Class, pseudo-class, attribute, and # of elements.
+					</li>
+				<li><p>In this instance we are using a style attribute inside the h2 element. This produces a score of 1000 and it is the highest score you can get. The rest of the selectors get zeros.</p>
+				<p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/specificity_1.JPG?raw=true"></center></p>
+					</li>
+				<li><p>In this instance there is no definition inside the style atribute which is zero, no id which is zero, no class which is zero, and it defines two elements "div" and "p" which is equal to two.</p><p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/specificity_2.JPG?raw=true"></center></p>
+					</li>
+				<li><p>With these two cases, we try to figure which selector combinations would win.</p><p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/specificity_3.JPG?raw=true"></center></p>
+					</li>
+				<li><p>The combination on the left would win since it has a higher score.</p><p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/specificity_4.JPG?raw=true"></center></p>
+					</li>
+
+				<li><p>You can override all these rules with "! important".</p><p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/specificity_5.JPG?raw=true"></center></p><p>Avoid using important unless you absolutely have to use it.
+					</li>
+			</ul>
+		</li>
 	</ol>
 
 
