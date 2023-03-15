@@ -1,6 +1,163 @@
-body {
-  font-family: system-ui;
-  background: #f06d06;
-  color: white;
-  text-align: center;
+h1{
+	font-family: sans-serif; 
+	width: 200;
+	padding: 12px;
+	margin-bottom: 20px;
+	color: black;
+	border-radius: 40px;
+	border-bottom: solid;
+	border-color: black;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 23px; 
+	text-align: center;
+	background: lightblue;
+
 }
+
+h2{
+	font-family: sans-serif; 
+	width: 250px;
+	padding: 12px;
+	margin-bottom: 20px;
+	color: black; 
+	border-radius: 40px;
+	border-bottom: solid;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 18px; 
+	text-align: center;
+	background: lightblue;
+}
+
+body{
+	background-color: whitesmoke;
+	font-family: sans-serif;
+	width: 200;
+}
+p
+{
+	text-align: left;
+}
+
+ol
+{
+ 	box-sizing: border-box;
+ 	text-align: left;
+
+}
+ul
+{
+ 	box-sizing: border-box;
+ 	text-align: left;
+}
+
+span {
+		border-radius: 40px;
+		padding: 8px;
+		border-bottom: solid;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 15px; 
+		text-align: center;
+		background: lightsalmon;
+	}
+
+#conflict span
+ {
+		border-radius: 40px;
+		padding: 8px;
+		border-bottom: solid;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto; 
+		text-align: center;
+	background: lightgreen
+}
+
+
+img 
+{ 
+
+ 	height: auto; width: 5%; min-width: 10em;
+
+}
+
+a:link, a:visited {
+	background-color: none;
+	color: black;
+	display: ruby-base;
+	width: 250px;
+	margin-bottom: 2px;
+
+}
+a:hover, a:active {
+	background-color: lightblue;
+	color: black;
+}
+
+
+.slideshow-container{
+	position: relative;
+	background: none;
+
+}
+.mySlides{
+	display: none;
+	padding: 80 px;
+	text-align: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: skyblue;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 10px;
+    background: #lightblue;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 1px;
+  background-color: #palegoldenrod;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+

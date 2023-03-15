@@ -4,122 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lesson Page</title>
-<style type="text/css">
-h1{
-	font-family: sans-serif; 
-	width: 200;
-	padding: 10px;
-	margin-bottom: 20px;
-	color: floralwhite; 
-	border-radius: 20px;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 20px; 
-	text-align: center;
-	background: lightskyblue;
-}
-p,
-{
-	text-align: left;
-}
-*{
-	background: lightsalmon;
-	font-family: sans-serif;
-}
-ol
-{
- 	box-sizing: border-box;
- 	text-align: left;
-}
-ul
-{
- 	box-sizing: border-box;
- 	text-align: left;
-}
-img 
-{ 
-
- 	height: auto; width: 5%; min-width: 10em;
-
-}
-
-a:link, a:visited {
-	background-color: none;
-	color: black;
-	display: ruby-base;
-	width: 250px;
-	margin-bottom: 2px;
-
-}
-a:hover, a:active {
-	background-color: antiquewhite;
-	color: lightsalmon;
-}
-
-
-.slideshow-container{
-	position: relative;
-	background: hotpink;
-
-}
-.mySlides{
-	display: none;
-	padding: 80 px;
-	text-align: center;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: skyblue;
-}
-
-/* The dot/bullet/indicator container */
-.dot-container {
-    text-align: center;
-    padding: 10px;
-    background: #lightblue;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 10px;
-  width: 10px;
-  margin: 0 1px;
-  background-color: #palegoldenrod;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-
+<link rel="stylesheet" type="text/css" href="styles.css">
+<style>
 </style>
 </head>
 <body>
@@ -130,20 +16,24 @@ a:hover, a:active {
 <div class="slideshow-container">
 	<ol>
 	
-	<div class="mySlides"><li><a href="#Introduction">Introduction</a></li></div>
+		<div class="mySlides"><li><a href="#Introduction">Introduction</a></li></div>
 	
-	<div class="mySlides"><li><a href="#Structure">HTML Anatomy and Document Structure</a></li></div>
+		<div class="mySlides"><li><a href="#Structure">HTML Anatomy and Document Structure</a></li></div>
 
-	<div class="mySlides"><li><a href="#CSS">Power of CSS</a></li></div>
+		<div class="mySlides"><li><a href="#CSS">Power of CSS</a></li></div>
 
-	<div class="mySlides"><li><a href="#CSSAnatomy">Anatomy of CSS</a></li></div>
+		<div class="mySlides"><li><a href="#CSSAnatomy">Anatomy of CSS</a></li></div>
 
-	<div class="mySlides"><li><a href="#Combselectors">Combining Selectors</a></li></div>
+		<div class="mySlides"><li><a href="#Combselectors">Combining Selectors</a></li></div>
 
-	<div class="mySlides"><li><a href="#Pseudo-class">Pseudo-Class Selector</a></li></div>
+		<div class="mySlides"><li><a href="#Pseudo-class">Pseudo-Class Selector</a></li></div>
 
-	<div class="mySlides"><li><a href="https://github.com/jhu-ep-coursera/fullstack-course4/blob/master/FAQ.md">FAQ</a></li></div>
-</ol>
+		<div class="mySlides"><li><a href="#styleplacement">Style Placement</a></li></div>
+
+		<div class="mySlides"><li><a href="#conflict">Conflict Resolution</a></li></div>
+
+		<div class="mySlides"><li><a href="https://github.com/jhu-ep-coursera/fullstack-course4/blob/master/FAQ.md">FAQ</a></li></div>
+	</ol>
 <a class="prev" onclick="plusSlides(-1)">❮</a>
 <a class="next" onclick="plusSlides(1)">❯</a>
 </div>
@@ -156,8 +46,12 @@ a:hover, a:active {
   <span class="dot" onclick="currentSlide(5)"></span>
   <span class="dot" onclick="currentSlide(6)"></span>
   <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
 </div>
+
 <script>
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -189,33 +83,32 @@ function showSlides(n) {
 
 
 <div>
-<!-- Better to use CSS here, will learn how and edit --> <center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/pageguy.gif?raw=true" width="200" height="220" alt = "https://media3.giphy.com/media/85AU17hrcbCCMko/giphy.gif?cid=ecf05e47hbtsqpfoaaqi2l4aqp4kgqzo3bhbjqf0195owk1h&rid=giphy.gif&ct=g">
+<!-- Better to use CSS here, will learn how and edit --> <center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/pageguy.gif?raw=true" alt = "https://media3.giphy.com/media/85AU17hrcbCCMko/giphy.gif?cid=ecf05e47hbtsqpfoaaqi2l4aqp4kgqzo3bhbjqf0195owk1h&rid=giphy.gif&ct=g">
 </div>
 
 <section id ='Introduction'>
-<h1>Introduction</h1>
+<h2>Introduction</h2>
 
 <div>
-<p>In this page, I will talk about the lessons from Week 1. In the first week of instructions, we learned a bit about Github, Sumblime Text, the Command Line, and all sorts of neat commands. We got a brief introduction into HTML, CSS, and JavaScript.</p>
+		<p>In this page, I will talk about the lessons from Week 1. In the first week of instructions, we learned a bit about Github, Sumblime Text, the Command Line, and all sorts of neat commands. We got a brief introduction into HTML, CSS, and JavaScript.</p>
 
 
-<ul>
-<li>HTML is used for structure.</li>
-<li>CSS is used for style</li>
-<li>JavaScript is used for behavior</li>
-</ul>
+	<ul>
+		<li>HTML is used for structure.</li>
+		<li>CSS is used for style</li>
+		<li>JavaScript is used for behavior</li>
+	</ul>
 
 
-<p> We learned more about what HTML is. HTML means <b>"HyperText Markup Language"</b>. The word <b>"HyperText"</b> refers to the way texts contain links to other texts. The word <b>"Markup"</b> refers to the way HTML annotates content using tags, telling the browser or machine what the content is. The word <b>"Language"</b> refers to the syntax of HTML. This is because there is a right and wrong way to code</p>
+	<p> We learned more about what HTML is. HTML means <b>"HyperText Markup Language"</b>. The word <b>"HyperText"</b> refers to the way texts contain links to other texts. The word <b>"Markup"</b> refers to the way HTML annotates content using tags, telling the browser or machine what the content is. The word <b>"Language"</b> refers to the syntax of HTML. This is because there is a right and wrong way to code</p>
 
-<p> Before 1997, web development and design was not driven by standards. Over time standards such as XHTML 1.0 (2000) and WHATWG:HTML (2004) was introduced by a bunch of vendors that came together (Web Hypertext Application Technology Group). In 2007, WHATWG & W3C started to work together. What they produced is HTML 3. These two organisations are basically in charge of HTML. W3C has standards while WHATWG is takes the stance that it is evolving.
+	<p> Before 1997, web development and design was not driven by standards. Over time standards such as XHTML 1.0 (2000) and WHATWG:HTML (2004) was introduced by a bunch of vendors that came together (Web Hypertext Application Technology Group). In 2007, WHATWG & W3C started to work together. What they produced is HTML 3. These two organisations are basically in charge of HTML. W3C has standards while WHATWG is takes the stance that it is evolving.
 
 
 <p> These are a few resources to kept track:</p> 
 	<ul> 
 		<li><a href="https://caniuse.com/"> caniuse.com </a></li>
-		<li> This is WHATWG's spec <a href = "https://html.spec.whatwg.org/multipage/#toc-introduction/"> website</a>
-		</li>
+		<li> This is WHATWG's spec <a href = "https://html.spec.whatwg.org/multipage/#toc-introduction/"> website</a></li>
 		<li>This <a href = "https://validator.w3.org/">website </a> validates your webpage</li>
 		<li> W3schools.com's <a href = "https://www.w3schools.com/browsers/"> browser statistics </a> is helpful to look at other browsers and their market share </li>
 
@@ -229,10 +122,10 @@ function showSlides(n) {
 
 
 <section id = "Structure">
-<h1>Anatomy, Structure, Content, Semantic elements of HTML</h1> 
+<h2>Anatomy, Structure, Content, Semantic elements of HTML</h2> 
 <p> In lectures 3 and 4, we learned about the anatomy and document structure of html.</p> 
 
-	<p style="text-align: center;"> This is an example of an html line, "&lt;p&gt; &lt;/p&gt;".</p> 
+	<p> This is an example of an html line, "&lt;p&gt; &lt;/p&gt;".</p> 
 	<p> In the following, I will explain what each character means. </p>
 	<ul>
 		<li>"&lt;p&gt;" or " &lt;h1&gt;" or "&lt;br&gt;" are what is called <b> element names </b>.</li> <li> "&lt;p&gt;" is an <b> opening tag </b> while "&lt;/p&gt; "is a <b>closing tag </b>.</li> <li>Some elements do not have a closing tag, "&lt;br&gt;" and "&lt;hr&gt;" are good example of this.</p></li><p> <li>This is an example of an attribute within a tag, "&lt;p id = "myId"&gt; &lt;/p&gt;". An attribute can only be specified in the opening tag. </p> <p> </li> <li>This is an example of a no content tag "&lt;p&gt;&lt;/p&gt;". This tag is correct, while this tag "&lt;p\&gt;" is incorrect</p></li>
@@ -242,27 +135,27 @@ function showSlides(n) {
 </section>
 
 <section id="CSS">
-<h1>Power of CSS</h1>
+<h2>Power of CSS</h2>
 <div>
 <p> CSS works by associating rules with HTML elements. CSS in an incredibly powerful technology. This tool helps to tailor how users absorb and relate to content. Structure alone enough. You need to style your content in way that pleasing to the user.</p>
 
-<ul><li>User experience of content matters</li></ul>
+<ul><li>User eperience of content matters</li></ul>
 
 <p><a href ="https://csszengarden.com/">CSS Zen Garden</a> is a useful resource that shows the power of CSS. The HTML code is the same but using CSS the creators can show a variety of ideas and designs</p>
 </div>
 </section>
 
 <section id ="CSSAnatomy">
-	<h1>Anatomy of a CSS Rule</h1>
+	<h2>Anatomy of a CSS Rule</h2>
 	<div>
 	<p>
 	A CSS rule consists of 2 main parts:</p>
 	<ol>
-		<li>The first part is the <b>selector</b>, which says what ever rules I am going to specify should apply to every kind of element in my page: <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/selector.JPG?raw=true" width="500" height="350"></center></p><p>In this case the rule is being applied to all the paragraphs "p" in the page. </p></li>
+		<li>The first part is the <b>selector</b>, which says what ever rules I am going to specify should apply to every kind of element in my page: <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/selector.JPG?raw=true"></center></p><p>In this case the rule is being applied to all the paragraphs "p" in the page. </p></li>
 		
-		<li>The second part is the <b>declaration</b> which is inside the brackets and it consits of two parts the property and value: <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/declaration.JPG?raw=true" width="400" height="250"></center></p><p>For every property there is a set number of values such "blue" or a numerical value. The property is predefined by CSS speficification. There can zero or more declarations:</p> <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/moredeclaration.JPG?raw=true" width="400" height="250"></center></p></li>
+		<li>The second part is the <b>declaration</b> which is inside the brackets and it consits of two parts the property and value: <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/declaration.JPG?raw=true"></center></p><p>For every property there is a set number of values such "blue" or a numerical value. The property is predefined by CSS speficification. There can zero or more declarations:</p> <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/moredeclaration.JPG?raw=true"></center></p></li>
 		
-		<li>The collection of the CSS Rules is called a stylesheet:<p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/stylesheet.JPG?raw=true" width="400" height="250">
+		<li>The collection of the CSS Rules is called a stylesheet:<p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/stylesheet.JPG?raw=true">
 		</p></center></li>
 	</ol>
 
@@ -284,17 +177,17 @@ function showSlides(n) {
 </section>
 
 <section id = "Combselectors">
-<h1>Combining Selectors</h1>
+<h2>Combining Selectors</h2>
 	<div>
 	<p>Combining selectors is a more precise way to target dumb elements. Here we will look some the most common ways of combining selectors.</p>
 	<ol>
-		<li>The first one is a "p" selector which has a "dot" big class selector: <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_1.JPG?raw=true" width="500" height="350"></center></p><p>This expresses that we want to target every "p" element that has an attribute class equal to big. Note: there are no spaces between "p" and "dot big".</p><p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_2.JPG?raw=true" width="500" height="350"></center></p><p>Notice here that only the "p" elements that have a class equal to big will be affected while the "div" element is unaffected.</p></li>
+		<li>The first one is a "p" selector which has a "dot" big class selector: <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_1.JPG?raw=true"></center></p><p>This expresses that we want to target every "p" element that has an attribute class equal to big. Note: there are no spaces between "p" and "dot big".</p><p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_2.JPG?raw=true"></center></p><p>Notice here that only the "p" elements that have a class equal to big will be affected while the "div" element is unaffected.</p></li>
 		
-		<li>The second type of selector is a child selector. The sytanx is a selector followed by another selector. <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_3.JPG?raw=true" width="400" height="250"></center></p><p> This way of combining is read from right to left. Meaning that the "p" element is a direct child of an "article" element.</p><p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_4.JPG?raw=true" width="400" height="250"></center></p> The only "p" element that is affected is a direct child to "article" as opposed to a regular "p" which will be unaffected. Also note, "p" not a direct child of "article" will be unaffected. Since it contained in the "div"  it is not a direct child of "div".</li>
+		<li>The second type of selector is a child selector. The sytanx is a selector followed by another selector. <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_3.JPG?raw=true"></center></p><p> This way of combining is read from right to left. Meaning that the "p" element is a direct child of an "article" element.</p><p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_4.JPG?raw=true"></center></p> The only "p" element that is affected is a direct child to "article" as opposed to a regular "p" which will be unaffected. Also note, "p" not a direct child of "article" will be unaffected. Since it contained in the "div"  it is not a direct child of "div".</li>
 		
-		<li>Another type of selector is a descendent selector. The syntax is selector space selector. It targets every "p" that is inside (at any level) of article. <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_5.JPG?raw=true" width="400" height="250" width="400" height="250"></center></p>Even if "p" is not a direct child of "article," but as long one of its parents in its ancestry is an "article" the rule will apply.<p><p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_7.JPG?raw=true" width="400" height="250" width="400" height="250"></center></p><p> The both "p" elements in "article" will turn blue, despite the second being part of "div" and not a direct child.
+		<li>Another type of selector is a descendent selector. The syntax is selector space selector. It targets every "p" that is inside (at any level) of article. <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_5.JPG?raw=true"></center></p>Even if "p" is not a direct child of "article," but as long one of its parents in its ancestry is an "article" the rule will apply.<p><p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_7.JPG?raw=true"></center></p><p> The both "p" elements in "article" will turn blue, despite the second being part of "div" and not a direct child.
 
-		<li>Selector combinations are not limited to element selectors.<p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_6.JPG?raw=true" width="400" height="250" width="400" height="250"></center></p> The first combination, ".colored p," says that every p that is inside, at any level, an element with a class equal to coloured will turn blue. The second one says taht every element with class = ".coloured" that is a direct child of "article" will turn blue.
+		<li>Selector combinations are not limited to element selectors.<p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_6.JPG?raw=true"></center></p> The first combination, ".colored p," says that every p that is inside, at any level, an element with a class equal to coloured will turn blue. The second one says taht every element with class = ".coloured" that is a direct child of "article" will turn blue.
 
 		</li>
 
@@ -304,11 +197,11 @@ function showSlides(n) {
 </section>
 
 <section id ="Pseudo-class">
-<h1>Pseudo-Class Selectors</h1>
+<h2>Pseudo-Class Selectors</h2>
 	<div>
-		<p>Pseudo-Class Selectors address targeting the combinations of regulars selectors, or targeting the ability to style based on user interaction with the page.<p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/pseudo_1.JPG?raw=true" width="400" height="250" width="400" height="250"></center></p><p> You can use this styling to change, for example, when the user hovers their mouse over that element</p>
+		<p>Pseudo-Class Selectors address targeting the combinations of regulars selectors, or targeting the ability to style based on user interaction with the page.</p><p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/pseudo_1.JPG?raw=true"></center></p><p> You can use this styling to change, for example, when the user hovers their mouse over that element</p>
 
-		<p>The way you specify a pseudo-class selector is by specifying some selector that we already know about with a collon followed by a predefined pseduo-class name<p><p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/pseudo_1.JPG?raw=true" width="400" height="250" width="400" height="250"></center></p>
+		<p>The way you specify a pseudo-class selector is by specifying some selector that we already know about with a collon followed by a predefined pseduo-class name<p><p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/pseudo_1.JPG?raw=true"></center></p>
 
 		<p>Many pseudo-class selectors exist. In the lecture these are the ones we covered:</p>
 		<ul>
@@ -319,16 +212,63 @@ function showSlides(n) {
 		<li>&#58;nth-child</li>
 		</ul> 
 
-		<p>In this example, I used the &#58;link, &#58;visited, &#58;hover, and &#58;active pseudoselectors to change the stlye of this website's hyperlinks</p><center><p><left><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/pseudo_3.JPG?raw=true" width="400" height="250" width="400" height="250"></left><span><right><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/pseudo_4.JPG?raw=true" width="400" height="250" width="400" height="250"></right></span></p></center>
+		<p>In this example, I used the &#58;link, &#58;visited, &#58;hover, and &#58;active pseudoselectors to change the style of this website's hyperlinks</p>
 
+		<p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/pseudo_3.JPG?raw=true"></center>
 
-	</div>
+</section>
+<section id = "styleplacement">
+<h2>Style Placement</h2>
+<div>
+	<p>Your style placement affects how reusable the styles are and it also affects which style declarations override other style declarations.</p>
+
+	<p>You can also insert a CSS style inside a element. But you should not use it. It is not coding practice. Inserting your stlying inside the head tag is usual practice.</p> <p> You can use an external style sheet assuming it is in the same directory as your html file.</p>
+
+	<ol>
+		<li>Placing styles inline is great for quick testing</li>
+		<li>Real sites almost always use external styles</li>
+		<li>Head styles are usually there to override external ones</li>
+	</ol>
+</div>
 </section>
 
+<section id = "conflict" class="conflict">
+<h2>Conflict Resolution</h2>
+<div>
+	<p>Your style placement affects how reusable the styles are and it also affects which style declarations override other style declarations.</p>
+
+	<p>Cascading is a fundamental feature of CSS. It's an algorithm defining how to combine properties values originating from different sources. As the name itself suggests, cascading style sheets, in other words the cascade algorithm, is at the core of understanding and using CSS. The cascade combine the importance, origin, specificity and source order of the applicable style declarations to determine exactly which declaration should be applied to any given element. And if there's a conflict, how to resolve that conflict. In other words, how to tell which CSS rule wins. </p>
+
+	<p>To understand how cascading works it is crucial to understand these four concepts:
+
+	<ol>
+		<li> <span>Origin or Origin precendence </span><p>
+			<ul>
+				<li>When two declarations are in conflict, in other words they specify the same property for the same target, origin precedence rule kicks in, and it's a very simple rule. And the rule is, <b>the last declaration wins</b>.</li> 
+
+				<li>Now, when trying to figure out what the last declaration is, you have to remember that HTML is processed sequentially. That means top to bottom. So as you see the declarations happen, the <b>lower on the page</b> they are, <b>the more precedence they have</b>. And also for precedence, think of external CSS as declared at the spot where it's linked to. So usually it's declared in the head somewhere, but there could be other styles that I declared in the head. And to figure out which one was declared last, imagine that the entire contents of an external CSS file were cut and pasted straight into the head portion, where that external CSS is declared.</li></p>
+			</ul>
+		</li> 
+				
+		<li><span>Merge</span>
+			<ul>
+				<li><p> When different CSS declarations do not conflict, that is, they still target the same element, but the CSS properties with which they target that element are different, there's even a simpler rule. And that is that declarations merge. So a declaration for, for example, font size, and a declaration for color, since they're two different properties, when they're targeted to the same element, even if they're targeted from two different origins, they will merge into one. And the element will get both the font size and the color.</p>
+				</li>
+			</ul>
+		</li>
+
+
+		<li><span>Inheritance</span> <p>The basic idea is that you have the document object model tree. And if you specify some CSS property on some element, all the children and grandchildren and so on and so on of that element will also inherit that property without you having to specify the property for each and every element. So for example, if I specify one property on the body tag, every element that is a child of a body tag, or even a child of a child of a body tag and so on, will inherit that property.</p> <p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/inheritance.JPG?raw=true"></center></li>
+		<li><span>Specificity</span></li>
+	</ol>
+
+
+</div>
+</section>
 <footer> 
-<span style="text-align: center;">
+<div>
 		There were some useful links and resources such codepen.io and jsfiddle.net
-	</span>
+	</div>
 </footer>
 </body>
 </html>
