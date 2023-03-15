@@ -1,22 +1,19 @@
 h1{
 	font-family: monospace;
-	width: 200;
-	padding: 12px;
-	margin-bottom: 20px;
-	color: black;
-	border-radius: 40px;
-	border-bottom: solid;
-	border-color: black;
+	padding: 10px;
+	margin-bottom: 0;
+	margin-top: 0;
+	color: black;;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 23px; 
 	text-align: center;
-	background: lightblue;
-	font-style: oblique;
 	font-weight: bold;
 	text-transform: uppercase;
-
+	background-color:skyblue;
+	border-block: 20px;
+	border-bottom: solid black;
 }
 
 h2{
@@ -41,12 +38,14 @@ body{
 	background-color: whitesmoke;
 	font-family: monospace;
 }
-
-#box {
-	background-color: blue;
-	padding: 10px 10px 10px 10px;
-
+section {
+	border-radius: 20px;
+	background-color: lightsalmon;
+	border-bottom: solid;
+	border-style: dashed;
+	padding: 20px;
 }
+
 p
 {
 	text-align: left;
@@ -88,18 +87,110 @@ span {
 			background: lightgreen
 	}
 
-
 img 
 { 
 
- 	height: auto; width: 5%; min-width: 10em;
+ 	height: 13em;
+ 	width: 18em;
+ 	image-resolution: from-image;
+ 	border-radius:20px;
+
 
 }
-	.conflict img {
+
+img.gifguy{
+	width: 300px;
+	height: 250px;
+	filter: contrast(200%);
+	margin-bottom: 50px;
+}
+
+div.slideshow-container{
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}
+
+img.gifguy {
+  filter: blur(5px); /* start with no blur */
+  transition: filter 1s ease-in-out; /* animate the filter property */ 
+  
+}
+
+
+img.gifguy:hover{
+
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  
+}
+
+img.gifguy:hover{
+
+  animation-name: blur;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+section img
+ {
+  border: 1px solid
+   #A2D9CE;
+  border-radius: 1px;
+  animation: border-animation 2s infinite;
+}
+
+@keyframes border-animation {
+  0% {
+    border-color: #A2D9CE;
+  }
+  50% {
+    border-color: #45B39D;
+  }
+  100% {
+    border-color: #A2D9CE;
+  }
+}
+
+
+/*conflict img {
 					width: 200px;
 					height: 150px;
 				}
-	
+	.boxmodel img {
+					width: 200px;
+					height: 250px;
+				}
+	*/
 a:link, a:visited {
 	background-color: none;
 	color: black;
@@ -109,7 +200,7 @@ a:link, a:visited {
 
 }
 a:hover, a:active {
-	background-color: lightblue;
+	background-color: grey;
 	color: black;
 }
 
@@ -173,5 +264,10 @@ a:hover, a:active {
 /* Add a background color to the active dot/circle */
 .active, .dot:hover {
   background-color: #717171;
+   animation-name: pulse;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
