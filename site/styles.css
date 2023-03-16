@@ -1,4 +1,13 @@
-h1{
+body
+{
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to left, #F9EBEA, #F2D7D5);
+	font-family: monospace;
+}
+
+h1
+{
 	font-family: monospace;
 	padding: 10px;
 	margin-bottom: 0;
@@ -11,12 +20,14 @@ h1{
 	text-align: center;
 	font-weight: bold;
 	text-transform: uppercase;
-	background-color:skyblue;
+	background-color:lightblue;
 	border-block: 20px;
 	border-bottom: solid black;
+	box-sizing: border-box;
 }
 
-h2{
+h2
+{
 	font-family: monospace;
 	width: 250px;
 	padding: 12px;
@@ -32,12 +43,6 @@ h2{
 	background: lightblue;
 }
 
-body{
-	margin: 0;
-	padding: 0;
-	background-color: whitesmoke;
-	font-family: monospace;
-}
 section {
 	border-radius: 20px;
 	background-color: lightsalmon;
@@ -95,17 +100,43 @@ img
  	image-resolution: from-image;
  	border-radius:20px;
 
-
 }
 
-img.gifguy{
+img.gifguy
+{
 	width: 300px;
 	height: 250px;
 	filter: contrast(200%);
 	margin-bottom: 50px;
+	filter: blur(5px);
 }
 
-div.slideshow-container{
+.image-container 
+{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+}
+
+.image-text 
+{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: black;
+  font-size: 14px;
+  text-align: justify;
+  width: 170px;
+  opacity: 0%;
+  background-color: ghostwhite opacity: 0.4;
+  border-radius: 20;
+  border-bottom: dotted;
+  padding: 5px;
+  box-sizing: border-box;
+
 }
 
 @keyframes zoom-in {
@@ -130,39 +161,62 @@ div.slideshow-container{
   }
 }
 
+
 @keyframes blur {
   0% {
-    filter: blur(5px);
-  }
-  100% {
     filter: blur(0);
   }
+  100% {
+    filter: blur(5px);
+  }
 }
 
-img.gifguy {
-  filter: blur(5px); /* start with no blur */
+
+
+@keyframes fade-in {
+0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+
+img.gifguy
+{
+  filter: blur(0px); /* start with no blur */
   transition: filter 1s ease-in-out; /* animate the filter property */ 
   
-}
+} 
 
-
-img.gifguy:hover{
+/*img.gifguy:hover{
 
   animation-name: zoom-in;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   
+}*/ 
+
+
+div.image-container:hover > .image 
+{
+  animation-name: blur;
+  animation-duration: infinite;
+  animation-fill-mode: forwards;
 }
 
-img.gifguy:hover{
 
-  animation-name: blur;
-  animation-duration: 1s;
+div.image-container:hover > .image-text
+{
+  opacity: 100%;
+  animation-name: fade-in;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
 section img
- {
+{
   border: 1px solid
    #A2D9CE;
   border-radius: 1px;
