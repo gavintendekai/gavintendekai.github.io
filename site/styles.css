@@ -51,6 +51,32 @@ section {
 	padding: 20px;
 }
 
+section.float {
+	overflow: hidden;
+	
+}
+div.float2 {
+float: left;
+padding: 5px;
+box-sizing: border-box;
+width: 40%;
+clear: left;
+background-color: peachpuff;
+border-bottom: solid;
+border-style: dashed;
+}
+
+ div.float3 {
+	float: right;
+	padding: 5px;
+	box-sizing: border-box;
+	width: 40%;
+	background-color: peachpuff;
+	border-bottom: solid;
+	border-style: dashed;
+}
+}
+
 p
 {
 	text-align: left;
