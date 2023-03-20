@@ -38,6 +38,10 @@
 		<div class="mySlides"><li><a href="#floating">Floating
 		</a></li></div>
 
+		<div class="mySlides"><li><a href="#positioning">Positioning
+		</a></li></div>
+
+
 		<div class="mySlides"><li><a href="https://github.com/jhu-ep-coursera/fullstack-course4/blob/master/FAQ.md">FAQ</a></li></div>
 	</ol>
 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -56,6 +60,7 @@
   <span class="dot" onclick="currentSlide(9)"></span>
   <span class="dot" onclick="currentSlide(10)"></span>
   <span class="dot" onclick="currentSlide(11)"></span>
+  <span class="dot" onclick="currentSlide(12)"></span>
 </div>
 <script>
 
@@ -117,7 +122,7 @@ function showSlides(n) {
 	</ul>
 
 
-	<p> We learned more about what HTML is. HTML means <b>"HyperText Markup Language"</b>. The word <b>"HyperText"</b> refers to the way texts contain links to other texts. The word <b>"Markup"</b> refers to the way HTML annotates content using tags, telling the browser or machine what the content is. The word <b>"Language"</b> refers to the syntax of HTML. This is because there is a right and wrong way to code</p>
+	<p> We learned more about what HTML is. HTML means <b>HyperText Markup Language</b>. The word <b>HyperText</b> refers to the way texts contain links to other texts. The word <b>Markup</b> refers to the way HTML annotates content using tags, telling the browser or machine what the content is. The word <b>Language</b> refers to the syntax of HTML. This is because there is a right and wrong way to code</p>
 
 	<p> Before 1997, web development and design was not driven by standards. Over time standards such as XHTML 1.0 (2000) and WHATWG:HTML (2004) was introduced by a bunch of vendors that came together (Web Hypertext Application Technology Group). In 2007, WHATWG & W3C started to work together. What they produced is HTML 3. These two organisations are basically in charge of HTML. W3C has standards while WHATWG is takes the stance that it is evolving.
 
@@ -151,7 +156,7 @@ function showSlides(n) {
 
 <p> We also looked as some html tags such &lt;html&gt;, &lt;head&gt;, &lt;meta&gt;, and&lt;title&gt;. A key reminder is that html is rendered sequentially meaning top to bottom.</p>
 </section>
-
+<p></p>
 <section id="CSS">
 <h2>Power of CSS</h2>
 <div>
@@ -241,6 +246,7 @@ function showSlides(n) {
 		<p><center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/pseudo_3.JPG?raw=true"></center>
 
 </section>
+<p></p>
 <section id = "styleplacement">
 <h2>Style Placement</h2>
 <div>
@@ -379,11 +385,126 @@ function showSlides(n) {
 </div>
 </section>
 
+<p></p>
+<section id = "positioning">
+<h2>Positioning</h2>
+<div>
+
+	<p> 
+		The <b>position</b> property in CSS has four legal values  &#40;in addition to the ubiquitous <b>inherit</b>&#41;:
+		<ul> <li><b>static</b></li>
+			<li><b>relative</b></li>
+			<li><b>absolute</b></li>
+			<li><b>fixed</b></li>
+		</ul>
+	</p>
+
+	<p> These two values <b>static</b> and <b>relative</b> are closely related. <b>Absolute</b> and <b>fixed</b> are also closely related. 	These schemes allow you to specify precise offsets to move the target element to the different part of the page origin.</p>
+
+	<h3> Rectangles </h3>
+
+	<p> In HTML when an element is rendered on a computer screen or printed on paper, those elements generate rectangular boxes. Just as the set of HTML elements is divided into block-level elements and inline elements, boxes in CSS are essentially either block boxes or inline boxes. </p>
+
+	<p> <b>p</b> and <b>div</b> generate bock boxes, while inline elements such as <b>strong</b> and <b>span</b> generate inline boxes. We can control the type of box that is generated using the <b>display</b>.
+
+	<h3>Static positioning</h3>
+	<p>Boxes with <b> position: static</b> are not really "positioned" at all in the CSS sense. They appear in way they are already ordered in mark up and take up as much space as they need. This is default behavior.
+
+	<p> There are significant difference in how block boxes and in-line boxes are laid out. </p>
+
+	<h3> Block box layout</h3>
+	<p> Unless specified, block boxes are laid out vertically from top to bottom in the order they occur in the markup. </p>
+	<ul> <li> Each box is normally as wide as the document&#40;the <b>body</b> element&#41;, even if we make them narrower they will still be laid out below one another.</li>
+		 <li> The vertical distance is controlled by the <b>margin-bottom</b> and <b>margin-top</b> properties.</li>
+		 <li> Dimensions can be specified using <b>width</b> and <b>height</b></li>
+		 <li> The default value for  <b>width</b> and <b>height</b> is <b>auto</b>. This means a block box will be wide as its parent</li>
+	</ul>
+
+	<div class="example">
+	<p> Example </p>
+	<p> These two <b>p</b> elements are block boxes. This italic <i style="background-color: lightseagreen;">inline text</i> is an example of an inline box.</p>
+	<p> These two <b>p</b> elements are block boxes. This italic <i style="background-color: lightseagreen;">in-line text</i> is an example of an inline box. </p>
+	<p> </p>
+	</div>
+
+<h3> Inline box layout</h3>
+	<p> Inline bozes appear horizontally as they are ordered in markup.</p>
+	<ul> <li> Using the <b>direction</b> property, the inline boxes will either be laid out from left to right &#40;<b>direction:ltr</b>&#41; or from right to left &#40;<b>direction:rtl</b>&#41;</li>
+		 <li> The height of the line boxes can be changed using <b>line-height</b></li>
+		 <li> It is important to note, for inline boxes you can not change or specify an dimensions. You can only specify horizontal margins, but not vertical margins.</li>
+		 <li> The inline box, if necessary, will be split into several inline boxes, distributed over two or more inline boxes. When this split occurs, any horizontal margins and padding, and any vertical borders, will apply before the first box and after the last box.</li>
+	</ul>
+
+	<p>To vertically align inline boxes within the the encompassing line box, you can use the <b>vertical-align</b> propery. <ul><li>The default value is <b>baseline.</b> Meaning the boxes are aligned so their text baselines line up.</li></ul>
+
+	<!--<div class= "inline">
+		<h3>Example</h3>
+		<div>
+			<p >This is an example of how inline boxes, if splot into several inline boxes, can look like when used inside your webpage</p> 
+		</div>
+	</div> -->
+
+
+	</p>
+
+<h3> Relative Positioning</h3>
+
+ <p> Relative positioning is more closely related to static "positioning" compared to absolute and fixed positioning. </p><p><b>Static</b> <b>position</b> is a way of saying 'normal document flow'. This is the default for all, expect HTML. Positioning offsets set to static are ignored.</p>
+
+<p> An element with <b>position:relative</b> is laid out like any static element; block-level or inline. However, when generated the box can be arranged according to:<ul> <li> <b>top</b>, <b>bottom</b>, <b>left</b>, and <b>right</b> &#40;offset&#41; properties. </li></ul></p>
+
+<p> The element is NOT taken out of normal document flow </p>
+			<ul> <li>Even if moved, its original spot is preserved</li>
+				<li> As far as other elements are concerned, the element 'takes up space' in the original document flow. </li>
+			</ul>
+<p> The properties specify the <i>edge</i> that the movement is put up to as opposed to <i>direction</i> of movement. The <b>top</b> property shifts the box relative to it's top edge, the <b>left</b> relative to it's left edge, etc. 
+
+
+
+
+
+
+
+
+<div class= "pos1">
+	<h3>Example</h3>
+	<div>
+	<p>This is an example of how relative position can look like when used inside your webpage</p> </div>
+	
+	</div>
+</div>
+
+	<p> The original spot is preserved in our html document. But this box displays skewed to the right on our webpage. <center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/pos1.JPG?raw=true"></center> </p>
+	
+
+	<p> <b> Absolute </b> positioning is based on the idea that all offsets &#40;top,bottom,left,right&#41; are relative to the position of the nearest ancestor which has positioning set on it, other than static</p>
+	<ul><li>By default, html is the only element that has non-static positioning set on it (relative.</li><li>Element is taken out of normal document flow, if it is set to absolute</li></ul> 
+<p></p>
+
+<div class= "pos2">
+	<h3>Example</h3>
+	<div>
+	<p>In this example I am using absolute positioning</p>
+	</div>
+</div></div>
+
+<p>An absolutely positioned element no longer exists in the normal document flow. Instead, it sits on its own layer separate from everything else. This is very useful: it means that we can create isolated UI features that don't interfere with the layout of other elements on the page.</p>
+
+<p> Read more about static and relative positioning <a href="https://www.w3.org/wiki/CSS_static_and_relative_positioning?viewType=Print&viewClass=Print">here </a>
+
+
+</section>
+
+
+
 
 <footer> 
+
 <div>
 		There were some useful links and resources such codepen.io and jsfiddle.net
 	</div>
+
+
 </footer>
 </body>
 </html>

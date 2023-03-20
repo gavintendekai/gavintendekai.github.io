@@ -4,6 +4,10 @@ body
 	padding: 0;
 	background: linear-gradient(to left, #F9EBEA, #F2D7D5);
 	font-family: monospace;
+	font-weight: normal;
+	font-size: 18px;
+	direction: ltr;
+
 }
 
 h1
@@ -38,7 +42,7 @@ h2
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 18px; 
+	font-size: 21px; 
 	text-align: center;
 	background: lightblue;
 }
@@ -49,12 +53,29 @@ section {
 	border-bottom: solid;
 	border-style: dashed;
 	padding: 20px;
+	width: auto;
+	margin-left: 20px;
+	margin-right: 20px;
+
 }
 
 section.float {
 	overflow: hidden;
 	
 }
+
+div.inline {
+  margin: 0 2em;
+  padding: 0 1em;
+  margin-left: 20px;
+  width: 50%;
+  background-color: peachpuff;
+  border-bottom: solid;
+  border-style: dashed;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
 div.float2 {
 float: left;
 padding: 5px;
@@ -66,7 +87,7 @@ border-bottom: solid;
 border-style: dashed;
 }
 
- div.float3 {
+div.float3 {
 	float: right;
 	padding: 5px;
 	box-sizing: border-box;
@@ -75,6 +96,54 @@ border-style: dashed;
 	border-bottom: solid;
 	border-style: dashed;
 }
+
+div.pos1 {
+	padding: 1em;
+	box-sizing: border-box;
+	width: 40%;
+	background-color: peachpuff;
+	border-bottom: solid;
+	border-style: dashed;
+	
+}
+
+div.pos1{
+	position: relative;
+	top: 10px;
+	left: 250px;
+}
+
+div.pos2 {
+	padding: 1em;
+	box-sizing: border-box;
+	width: 40%;
+	background-color: peachpuff;
+	border-bottom: solid;
+	border-style: dashed;
+}
+
+div.example {
+
+	padding: 1em;
+	box-sizing: border-box;
+	width: 40%;
+	background-color: peachpuff;
+	border-bottom: solid;
+	border-style: dashed;
+}
+
+div.pos2 {
+	
+	position: absolute;
+
+}
+
+b {
+	color: black;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 1px 4px;
 }
 
 p
@@ -108,14 +177,24 @@ span {
 
 	#conflict span
  	{		
-			border-radius: 40px;
 			padding: 8px;
 			border-bottom: solid;
 			position: relative;
-			margin-left: auto;
+			margin-left: 20px;
 			margin-right: auto; 
-			text-align: center;
-			background: lightgreen
+			text-align: left;
+			width: 40%;
+			border-radius: 0;
+	}
+
+	h3 {
+			padding: 8px;
+			border-bottom: solid;
+			position: relative;
+			margin-left: 20px;
+			margin-right: auto; 
+			text-align: left;
+			width: 40%;
 	}
 
 img 
@@ -332,8 +411,8 @@ a:hover, a:active {
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 10px;
-  width: 10px;
+  height: 5px;
+  width: 5px;
   margin: 0 1px;
   background-color: #palegoldenrod;
   border-radius: 50%;
