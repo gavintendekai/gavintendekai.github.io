@@ -41,6 +41,11 @@
 		<div class="mySlides"><li><a href="#positioning">Positioning
 		</a></li></div>
 
+		<div class="mySlides"><li><a href="#Media">Media Query
+		</a></li></div>
+
+		<div class="mySlides"><li><a href="#RDesign">Responsive Design
+		</a></li></div>
 
 		<div class="mySlides"><li><a href="https://github.com/jhu-ep-coursera/fullstack-course4/blob/master/FAQ.md">FAQ</a></li></div>
 	</ol>
@@ -61,6 +66,8 @@
   <span class="dot" onclick="currentSlide(10)"></span>
   <span class="dot" onclick="currentSlide(11)"></span>
   <span class="dot" onclick="currentSlide(12)"></span>
+  <span class="dot" onclick="currentSlide(13)"></span>
+  <span class="dot" onclick="currentSlide(14)"></span>
 </div>
 <script>
 
@@ -143,7 +150,8 @@ function showSlides(n) {
 </section>
 
 <p></p>
-
+<p></p>
+<p></p>
 <section id = "Structure">
 <h2>Anatomy, Structure, Content, Semantic elements of HTML</h2> 
 <p> In lectures 3 and 4, we learned about the anatomy and document structure of html.</p> 
@@ -169,7 +177,7 @@ function showSlides(n) {
 </section>
 
 <p></p>
-
+<p></p>
 <section id ="CSSAnatomy">
 	<h2>Anatomy of a CSS Rule</h2>
 	<div>
@@ -202,7 +210,7 @@ function showSlides(n) {
 </section>
 
 <p></p>
-
+<p></p>
 <section id = "Combselectors">
 <h2>Combining Selectors</h2>
 	<div>
@@ -224,7 +232,7 @@ function showSlides(n) {
 </section>
 
 <p></p>
-
+<p></p>
 <section id ="Pseudo-class">
 <h2>Pseudo-Class Selectors</h2>
 	<div>
@@ -247,6 +255,7 @@ function showSlides(n) {
 
 </section>
 <p></p>
+<p></p>
 <section id = "styleplacement">
 <h2>Style Placement</h2>
 <div>
@@ -262,6 +271,7 @@ function showSlides(n) {
 </div>
 </section>
 
+<p></p>
 <p></p>
 
 <section id = "conflict" class="conflict">
@@ -323,6 +333,7 @@ function showSlides(n) {
 </div>
 </section>
 <p></p>
+<p></p>
 <section id = "boxmodel">
 <h2>The Box Model</h2>
 <div>
@@ -350,6 +361,7 @@ function showSlides(n) {
 
 </div>
 </section>
+<p></p>
 <p></p>
 <section id ="floating" class= "float">
 	<h2>Floating</h2>
@@ -385,6 +397,7 @@ function showSlides(n) {
 </div>
 </section>
 
+<p></p>
 <p></p>
 <section id = "positioning">
 <h2>Positioning</h2>
@@ -459,13 +472,6 @@ function showSlides(n) {
 			</ul>
 <p> The properties specify the <i>edge</i> that the movement is put up to as opposed to <i>direction</i> of movement. The <b>top</b> property shifts the box relative to it's top edge, the <b>left</b> relative to it's left edge, etc. 
 
-
-
-
-
-
-
-
 <div class= "pos1">
 	<h3>Example</h3>
 	<div>
@@ -476,27 +482,92 @@ function showSlides(n) {
 
 	<p> The original spot is preserved in our html document. But this box displays skewed to the right on our webpage. <center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/pos1.JPG?raw=true"></center> </p>
 	
+	<p> Also, note that <b>top: 1em</b> and <b>bottom: -1em</b> specify the same position. Therefore, it is pointless to specify both the <b>top</b> and <b>bottom</b> properties &#40;or <b>left</b> and <b>right</b>&#41; for the same element. </p>
 
-	<p> <b> Absolute </b> positioning is based on the idea that all offsets &#40;top,bottom,left,right&#41; are relative to the position of the nearest ancestor which has positioning set on it, other than static</p>
-	<ul><li>By default, html is the only element that has non-static positioning set on it (relative.</li><li>Element is taken out of normal document flow, if it is set to absolute</li></ul> 
+	<p> The rule in CSS is that <b>bottom</b> should be ignored, if <b>top</b> is specified. </p>
+
+	<p> <b> Absolute </b> positioning is based on the idea that all offsets &#40;<b>top</b>,<b>bottom</b>,<b>left</b>,<b>right</b>&#41; are relative to the position of the nearest ancestor which has positioning set on it, other than static</p>
+	<ul><li>By default, html is the only element that has non-static positioning set on it (relative.</li><li>Element is taken out of normal document flow, if it is set to absolute.</li></ul> 
 <p></p>
 
-<div class= "pos2">
-	<h3>Example</h3>
-	<div>
-	<p>In this example I am using absolute positioning</p>
-	</div>
-</div></div>
 
 <p>An absolutely positioned element no longer exists in the normal document flow. Instead, it sits on its own layer separate from everything else. This is very useful: it means that we can create isolated UI features that don't interfere with the layout of other elements on the page.</p>
 
 <p> Read more about static and relative positioning <a href="https://www.w3.org/wiki/CSS_static_and_relative_positioning?viewType=Print&viewClass=Print">here </a>
 
+</section>
+<p></p>
+<p></p>
+<section id ="Media">
+<h2>Media Queries</h2>
+<div>
+	<p>Media queries allow you to group styles together and target them to devices based on some criteria. You can target a device based on its width, height, or orientation like landscape of potraint.</p>
+
+	<h3>Media Query Syntax</h3>
+	<p> A media query starts with <b>@media</b> following <b>&#40;styling rule&#41;</b>. This is called a media feature which resolves to true or false. <center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/Media1.JPG?raw=true"></center> </p>
+
+	<p>If the media feature resolves to TRUE then the styles within the curly braces apply.<center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/Media2.JPG?raw=true"></center></p>
+
+	<p> There is a number of media query features available:<center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/Media3.JPG?raw=true"></center> <ul> <li> The most common being<b>&#40;max-width&#41;</b> and <b>&#40;min-width&#41;</b> </li> </ul></p>
+
+	<p> You can use logical operators to combine or separate media queries:<center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/Media4.JPG?raw=true"></center> <ul> <li> For example, you can use<b>&#40;AND&#41;</b> and <b>&#40;OR&#41;</b> logical operators.</li> </ul></p>
+
+	<p> There is common approach to style media queries: <center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/Media5.JPG?raw=true"></center><ul> <li> You almost always start with a base style, then you start target some screen sizes by targeting some of the base style taking and adding things. It is important to have clear and seperate boundaries.</li> </ul></p>
+	
+</div>
 
 </section>
+<p></p>
+<p></p>
+<section id="RDesign">
+<h2>Responsive Design</h2>
+<div>
+
+<h3>What is responsive design?</h3>
+<p> Responsive design came out of the need to handle the large growth of mobile devices able to browse the web. </p>
+
+<p>There are usually more mobile devices browsing the web. The question becomes which devices do you target and support? The answer is that all of them. If you fail to target and support all mobile devices, you lose a big chunk of users. And in order to do this, you use <i> responsive design </i>.</p>
+
+<p> Using responsive design, a site is designed to adapt its layout to the viewing enviroment bt using fluid, proportion-based grids, flexible images, and CSS3 media queries. </p>
+<center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/rdesign1.JPG?raw=true"></center>
+<p> </p>
+<ul> 
+	<li>
+		The site's layout adapts to the size of device &#40;width and height&#41;.
+	</li>
+	<li>
+		Content verbosity or its visual delivery may change.
+	</li>
+
+</ul>
+<h3> Alternatives to responsive design?</h3>
+<p>Before responsive design was possible, you could use a service high technology that detects your user agent&#40;the browser being used&#41;. After it detects the user agent, the service will serve up either a desktop version of the site or a mobile version. </p>
+<center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/rdesign2.JPG?raw=true"></center>
+<ul> 
+	<li>
+		This approach had some issues because developers would need to produce one mobile version of their website that fits every kind of device and would produce two versions of their website. This results in a poor user experience. This approach is rarely used today.
+	</li>
+</ul>
+<h3>The layout</h3>
+<p> The most common layout out there or responsive layout, is a <b>12-column grid responsive layout </b>, this is the same as Twitter bootsrap, and almost every responsive framework uses this nowadays.</p>
+<ul> 
+	<li>
+		12 is used because of factors of 12. It is evenly divisible by 1,2,3,4,6 and 12.
+	</li>
+</ul>
+
+<p> This allows to sub-divide the page into sections that are evenly split:
+<center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/rdesign3.JPG?raw=true"></center></p>
+
+<p> You can approach this layout using percentages, you can convert the 3 into 25%, 6 into 50%, 4 into 33.33%:
+<center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/rdesign4.JPG?raw=true"></center></p>
+
+<p> You can convert this layout using nested grids, e.g., this could be having each grid out of 4 being another 12:
+<center><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/rdesign4.JPG?raw=true"></center></p>
 
 
-
+</div>
+</section>
 
 <footer> 
 
