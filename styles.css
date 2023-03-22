@@ -90,8 +90,8 @@ hr {
 }
 
 img{
-	width: 4.8em;
-	height: 5em;
+	width: 5.5em;
+	height: 5.1em;
 }
 span.resume {
 	width: 4.6em;
@@ -110,7 +110,10 @@ span.resume-text {
 	text-decoration: blink;
 	vertical-align: -1.5em;
 }
-
+p.dailypuzzle {
+	font-size: 1.5em;
+	margin-left: 3em;
+}
 div.logo-container {
 	background-color: none;
 	border-bottom: solid .1em;
@@ -132,9 +135,7 @@ p.welcome {
   	color: #138D75;
 }
 
-p.professionsummary {
 
-}
 
 div.hello {
 	font-size: 1.5em;
@@ -160,6 +161,11 @@ div.Projects {
 
 }
 
+iframe.chessboard {
+	width: 400px;
+	height: 560px;
+}
+
 a {
 	text-decoration: none;
 }
@@ -176,13 +182,95 @@ a {
   }
 }
 
-@Media (min-width: 20em) {
+@Media (min-width: 20em) and (max-width: 23.4375em) {
+	p.welcome {
+	font-size: 4em;
+	margin-left: .2em;
+
+	}
+	div.welcome-text {
+		font-size: 1.6em;
+		width: 14em;
+	}
 	section.mainarea {
 		margin-left: 1em;
 
 	}
+	div.Projects {
+		margin-left: -.5em;
+		font-size: 1.2em;
+		width: 20em;
+	}
+	img {
+		width: 2em;
+		height: 2.5em;
+	}
+	div.socialmedia {
+		margin-left: -.5em;
+	}
+	span.resume {
+		width: 2em;
+		height: 2.3em;
+		margin-right: 1em;	
+	}
+	span.resume-text {
+		font-size: .5em;
+	}
+	p.dailypuzzle {
+		margin-left: -2em;
+		font-size: 1.2em;
+	}
+	iframe.chessboard {
+		width: 200px; height: 280px;
+	}
 }
+@Media (min-width: 23.4375em) and (max-width: 26.5625em) {
+	div.hello{
+		margin-left: -1.6em;
+	}
+	p.welcome {
+	font-size: 5em;
+	margin-left: -.2em;
 
+	}
+	div.welcome-text {
+		font-size: 2em;
+		width: 14em;
+		margin-left: -1.2em;
+	}
+	section.mainarea {
+		margin-left: 1em;
+
+	}
+	div.Projects {
+		margin-left: -.8em;
+		font-size: 1,5em;
+		width: 20em;
+	}
+	img {
+		width: 3em;
+		height: 3.5em;
+
+	}
+	div.socialmedia {
+		margin-left: -.5em;
+	}
+	span.resume {
+		width: 3em;
+		height: 3.3em;
+		margin-right: 1em;	
+	}
+	span.resume-text {
+		font-size: .5em;
+	}
+	p.dailypuzzle {
+		margin-left: -2em;
+		font-size: 1.2em;
+	}
+	iframe.chessboard {
+		width: 250px; height: 280px;
+	}
+}
 @Media (min-width: 23.4375em) {
 	section.mainarea {
 		margin-left: 3em;
