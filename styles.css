@@ -23,7 +23,7 @@ h1
 	padding: 0.625em;
 	margin-bottom: 0em;
 	margin-top: 0em;
-	color: black;;
+	color: white;;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
@@ -31,11 +31,10 @@ h1
 	text-align: center;
 	font-weight: bold;
 	text-transform: full-size-kana;
-	background-color:lightblue;
 	border-block: 1.25em;
-	border-bottom: solid black;
 	box-sizing: border-box;
 	display: flex;
+
 }
 
 h2
@@ -55,19 +54,144 @@ h2
 }
 
 section {
-	border-radius: 1.25em;
-	background-color: lightsalmon;
-	border-bottom: solid;
-	border-style: dashed;
-	padding: 1.80em;
+	padding: 2em;
 	width: auto;
 	margin-left: 2em;
 	margin-right: 2em;
-	width: 50%;
+	width: 60%;
 	display: flex;
+	font-size: 1.2em;
 
 }
+
+section.mainarea {
+	border-radius: 1.25em;
+	padding: 2em;
+	width: auto;
+	margin-left: -2em;
+	margin-right: 0em;
+	width: 80%;
+	display: flex;
+	margin-top: 0.5em;
+    padding: 0em;
+    margin-left: 4em;
+    
+
+}
+
+section.Welcome {
+	width: 90%;
+	display: inline;
+	margin: .40em;
+	margin-top: 0;
+	margin: 0em;
+    margin-top: 0;
+    margin-left: 0;
+    font: serif;
+    text-align: justify-all;
+}
+
 
 hr {
 	margin-top: 0em;
 }
+
+img.logo {
+	margin-top: .5em;
+	image-resolution: from-image;
+	width: 3em;
+	height: 3em;
+	float: left;
+}
+div.logo-container {
+	background-color: black;
+	border-bottom: solid .1em;
+}
+a:hover {
+	background-color: whitesmoke;
+	color: black;
+	cursor: url ='https://s3.amazonaws.com/pix.iemoji.com/sams33/0558.png', auto;
+	content: "\1F4A1";
+}
+
+p.emoji {
+	font-size: 1.5em;
+	margin: 0;
+	margin-bottom: -1em;
+	text-align: center;
+	position: relative;
+	transform: translateY(-1em);
+	animation: float 3s ease-in-out infinite;
+}
+p.welcome {
+	font-size: 1.6em;
+	margin: 0;
+	text-align: center;
+	font-weight: bolder;
+	text-transform: uppercase;
+  	transform: scaleX(1.2);
+}
+
+
+
+span.welcome-text {
+	text-align: center;
+	font-family: sans-serif;
+
+}
+
+p.professionalsummary{
+	
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-1em);
+  }
+  50% {
+    transform: translateY(-1.6em);
+  }
+  100% {
+    transform: translateY(-1em);
+  }
+}
+
+@Media (min-width: 20em) {
+	section.mainarea {
+		margin-left: 1em;
+
+	}
+}
+
+@Media (min-width: 23.4375em) {
+	section.mainarea {
+		margin-left: 3em;
+
+	}
+}
+
+@Media (min-width: 26.5625em) {
+	section.mainarea {
+		margin-left: 3em;
+
+	}
+}
+@Media (min-width: 48em) {
+	section.mainarea {
+		margin-left: 4em;
+
+	}
+}
+@Media (min-width: 64em) {
+	section.mainarea {
+		margin-left: 6em;
+
+	}
+}
+
+
+
+
+
+
+

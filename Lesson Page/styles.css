@@ -23,7 +23,7 @@ h1
 	padding: 0.625em;
 	margin-bottom: 0em;
 	margin-top: 0em;
-	color: black;;
+	color: white;;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
@@ -31,9 +31,8 @@ h1
 	text-align: center;
 	font-weight: bold;
 	text-transform: uppercase;
-	background-color:lightblue;
+	background-color:black;
 	border-block: 1.25em;
-	border-bottom: solid black;
 	box-sizing: border-box;
 }
 
