@@ -30,11 +30,12 @@ h1
 	font-size: 1.4375em; 
 	text-align: center;
 	font-weight: bold;
-	text-transform: uppercase;
+	text-transform: full-size-kana;
 	background-color:lightblue;
 	border-block: 1.25em;
 	border-bottom: solid black;
 	box-sizing: border-box;
+	display: flex;
 }
 
 h2
@@ -58,9 +59,15 @@ section {
 	background-color: lightsalmon;
 	border-bottom: solid;
 	border-style: dashed;
-	padding: 1.25em;
+	padding: 1.80em;
 	width: auto;
-	margin-left: 1.25em;
-	margin-right: 1.25em;
+	margin-left: 2em;
+	margin-right: 2em;
+	width: 50%;
+	display: flex;
 
+}
+
+hr {
+	margin-top: 0em;
 }
