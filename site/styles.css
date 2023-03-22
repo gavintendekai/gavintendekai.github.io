@@ -142,6 +142,15 @@ div.example {
 	border-bottom: solid;
 	border-style: dashed;
 }
+div.example2 {
+
+	padding: 1em;
+	box-sizing: border-box;
+	width: auto;
+	background-color: peachpuff;
+	border-bottom: solid;
+	border-style: dashed;
+}
 
 
 b {
@@ -210,6 +219,7 @@ img
  	width: 18em;
  	image-resolution: from-image;
  	border-radius:1.25em;
+ 	align-items: center;
 
 }
 
@@ -220,6 +230,10 @@ img.gifguy
 	filter: contrast(200%);
 	margin-bottom: 3.125em;
 	filter: blur(0.3125em);
+}
+
+img.gifguy {
+	margin-left: 40%;
 }
 
 .image-container 
@@ -328,7 +342,7 @@ div.image-container:hover > .image-text
 
 section img
 {
-  border: 0.0625em solid
+  border: 0.0625em dashed
    #A2D9CE;
   border-radius:  0.0625em;
   animation: border-animation 2s infinite;
@@ -500,7 +514,10 @@ a:hover, a:active {
 		margin-left: 11em;
 	}
 	img {
-		width: 45%;
+		margin-left: 14em;
+		margin-right: 11em;
+		padding: 0.3em;
+		white-space: pre-wrap;
 	}
 	section {
 		padding: 5em;
@@ -514,7 +531,7 @@ a:hover, a:active {
 }
 /* Large Devices */
 
-@media (min-width: 90em) {
+/*@media (min-width: 20em) and (max-width: 64em ) {
 	.col-lg-1, .col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12 {
 		float: left;
 	}
@@ -556,4 +573,4 @@ a:hover, a:active {
 	}
 
 
-}
+}*/
