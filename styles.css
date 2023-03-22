@@ -100,7 +100,7 @@ span.resume {
 	display: inline-block;
 	text-align: center;
 	border-style: solid;
-	border-color: #138D75;
+	border-color: #35D2E5;
 	margin-right: 2em;
 	font-size: 1em;
 	font-weight: bold;
@@ -115,9 +115,19 @@ p.dailypuzzle {
 	margin-left: 3em;
 }
 div.logo-container {
-	background-color: none;
-	border-bottom: solid .1em;
+
+	position: absolute;
+	margin-left: 65em;
+	margin-top: 2em;
+	
+	
 }
+img.logo {
+	border-radius: 10em 1em 9.45em 6.4375em / 10em 1em  15em .2em;
+	width: 30em;
+	height: 31em;
+}
+
 div.socialmedia {
 	align-items: center;
 	margin-left: 38%;
@@ -132,7 +142,7 @@ p.welcome {
 	font-weight: bolder;
 	text-transform: uppercase;
   	transform: scaleX(1.2);
-  	color: #138D75;
+  	color: #35D2E5;
 }
 
 
@@ -147,6 +157,7 @@ div.welcome-text {
 	font-family: monospace;
 	font-size: 2.25em;
 	margin-top: -1em;
+	width: 80%;
 
 
 }
