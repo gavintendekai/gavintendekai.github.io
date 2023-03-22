@@ -90,9 +90,27 @@ hr {
 }
 
 img{
-	width: 5em;
+	width: 4.8em;
 	height: 5em;
 }
+span.resume {
+	width: 4.6em;
+	height: 4.8em;
+	float: left;
+	display: inline-block;
+	text-align: center;
+	border-style: solid;
+	border-color: #138D75;
+	margin-right: 2em;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+span.resume-text {
+	text-decoration: blink;
+	vertical-align: -1.5em;
+}
+
 div.logo-container {
 	background-color: none;
 	border-bottom: solid .1em;
@@ -104,10 +122,10 @@ div.socialmedia {
 }
 
 p.welcome {
-	font-size: 10em;
+	font-size: 7em;
 	margin: 0;
 	text-align: left;
-	margin-left: .7em;
+	margin-left: 1em;
 	font-weight: bolder;
 	text-transform: uppercase;
   	transform: scaleX(1.2);
@@ -126,17 +144,19 @@ div.welcome-text {
 	margin-top: auto;
 	text-align: justify-all;
 	font-family: monospace;
-	font-size: 3em;
+	font-size: 2.25em;
+	margin-top: -1em;
 
 
 }
 div.Projects {
-	margin-top: -5em;
+	margin-top: -4.5em;
 	width: 80%;
-	margin-left: 3.3em;
+	margin-left: 2.7em;
 	text-align: left;
 	font-family: monospace;
 	font-size: 1.5em;
+	color: #5D5D5D;
 
 }
 
