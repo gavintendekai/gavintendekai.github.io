@@ -311,6 +311,18 @@ a {
 		margin-left: 6em;
 
 	}
+	div.logo-container {
+		margin-left: 50em;
+	}
+}
+@Media (min-width: 90em) {
+	section.mainarea {
+		margin-left: 6em;
+
+	}
+	div.logo-container {
+		margin-left: 70em;
+	}
 }
 
 
