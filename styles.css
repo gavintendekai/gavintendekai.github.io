@@ -116,16 +116,19 @@ p.dailypuzzle {
 }
 div.logo-container {
 
-	position: absolute;
-	margin-left: 65em;
-	margin-top: 2em;
-	
+	position: fixed;
+	margin-left: 50em;
+    margin-top: 2em;
+
 	
 }
 img.logo {
 	border-radius: 10em 1em 9.45em 6.4375em / 10em 1em  15em .2em;
-	width: 30em;
-	height: 31em;
+	width: 21em;
+	height: 19em;
+	position: absolute;
+	background-attachment: fixed;
+	scroll-behavior: fixed;
 }
 
 div.socialmedia {
@@ -192,6 +195,8 @@ a {
     transform: translateY(-1em);
   }
 }
+
+/
 
 @Media (min-width: 20em) and (max-width: 23.4375em) {
 	p.welcome {
