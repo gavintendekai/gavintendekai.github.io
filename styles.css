@@ -96,12 +96,12 @@ hr {
 	margin-top: 0em;
 }
 
-img.logo {
+img{
 	margin-top: .5em;
 	image-resolution: from-image;
-	width: 3em;
-	height: 3em;
-	float: left;
+	width: 1em;
+	height: 1em;
+	font-size: 0;
 }
 div.logo-container {
 	background-color: black;
@@ -134,7 +134,7 @@ p.welcome {
 
 
 
-span.welcome-text {
+div.welcome-text {
 	text-align: center;
 	font-family: sans-serif;
 
