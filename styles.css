@@ -11,7 +11,6 @@ body
 {
 	background: linear-gradient(to left, #F9EBEA, #F2D7D5);
 	font-family: monospace;
-	font-weight: normal;
 }
 
 h1
@@ -24,7 +23,6 @@ h1
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 1.4375em; 
 	text-align: center;
 	font-weight: bold;
 	text-transform: full-size-kana;
@@ -44,7 +42,6 @@ h2
 	border-radius:  2.5em;
 	border-bottom: solid;
 	position: relative;
-	font-size: 1.3125em; 
 	text-align: center;
 	background: lightblue;
 	align-items: center;
@@ -57,7 +54,6 @@ section {
 	margin-right: 2em;
 	width: 60%;
 	display: flex;
-	font-size: 1.2em;
 
 }
 
@@ -84,7 +80,7 @@ section.Welcome {
 	margin: 0em;
     margin-top: 0;
     margin-left: 0;
-    font: serif;
+    font: monospace;
     text-align: justify-all;
 }
 
@@ -98,7 +94,7 @@ img{
 	height: 5em;
 }
 div.logo-container {
-	background-color: black;
+	background-color: none;
 	border-bottom: solid .1em;
 }
 div.socialmedia {
@@ -107,29 +103,40 @@ div.socialmedia {
 	margin-top: -4em;
 }
 
-p.emoji {
-	font-size: 1.5em;
-	margin: 0;
-	margin-bottom: -1em;
-	text-align: center;
-	position: relative;
-	transform: translateY(-1em);
-	animation: float 3s ease-in-out infinite;
-}
 p.welcome {
-	font-size: 1.6em;
+	font-size: 10em;
 	margin: 0;
-	text-align: center;
+	text-align: left;
+	margin-left: .7em;
 	font-weight: bolder;
 	text-transform: uppercase;
   	transform: scaleX(1.2);
+  	color: #138D75;
 }
 
+p.professionsummary {
 
+}
+
+div.hello {
+	font-size: 1.5em;
+}
 
 div.welcome-text {
-	text-align: center;
-	font-family: sans-serif;
+	margin-top: auto;
+	text-align: justify-all;
+	font-family: monospace;
+	font-size: 3em;
+
+
+}
+div.Projects {
+	margin-top: -5em;
+	width: 80%;
+	margin-left: 3.3em;
+	text-align: left;
+	font-family: monospace;
+	font-size: 1.5em;
 
 }
 
