@@ -4,13 +4,14 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 body
 {
 	background: linear-gradient(to left, #F9EBEA, #F2D7D5);
 	font-family: monospace;
+	scroll-behavior: fixed;
 }
 
 h1
@@ -115,19 +116,15 @@ p.dailypuzzle {
 	margin-left: 3em;
 }
 div.logo-container {
-
 	position: fixed;
 	margin-left: 50em;
     margin-top: 2em;
-
 	
 }
 img.logo {
 	border-radius: 10em 1em 9.45em 6.4375em / 10em 1em  15em .2em;
 	width: 21em;
 	height: 19em;
-	position: absolute;
-	background-attachment: fixed;
 	scroll-behavior: fixed;
 }
 
@@ -184,6 +181,25 @@ a {
 	text-decoration: none;
 }
 
+/*Scroll reveal element */
+
+/*Use this class when you want your content to be hidden*/
+.BeforeScroll
+{
+  height: 100px; /*Whatever you want*/
+  width: 100%; /*Whatever you want*/
+  opacity: 0;
+}
+
+
+/*Use this class when you want your content to be shown after some scroll*/
+.AfterScroll
+{
+  height: 100px; /*Whatever you want*/
+  width: 100%; /*Whatever you want*/
+  opacity: 100%;
+}
+
 @keyframes float {
   0% {
     transform: translateY(-1em);
@@ -196,7 +212,7 @@ a {
   }
 }
 
-/
+
 
 @Media (min-width: 20em) and (max-width: 23.4375em) {
 	p.welcome {
@@ -293,6 +309,7 @@ a {
 
 	}
 }
+
 
 @Media (min-width: 26.5625em) {
 	section.mainarea {
