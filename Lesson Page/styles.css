@@ -23,19 +23,22 @@ h1
 	padding: 0.625em;
 	margin-bottom: 0em;
 	margin-top: 0em;
-	color: white;;
+	color: black;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 1.4375em; 
+	font-size: 2em; 
 	text-align: center;
-	font-weight: bold;
+
 	text-transform: uppercase;
-	background-color:black;
+	background-color:lightgrey;
 	border-block: 1.25em;
 	box-sizing: border-box;
 }
 
+div {
+	width: auto;
+}
 h2
 {
 	font-family: monospace;
@@ -43,24 +46,22 @@ h2
 	padding: 0.75em;
 	margin-bottom: 1.25em;
 	color: black; 
-	border-radius:  2.5em;
-	border-bottom: solid;
+	border-radius:  70%;
 	position: relative;
-	font-size: 1.3125em; 
+	font-size: 1.53125em; 
 	text-align: center;
-	background: lightblue;
+	background: ghostwhite;
 	align-items: center;
+	box-shadow: 0.125em 0.125em 0.125em #333 inset;
 }
 
 section {
-	border-radius: 1.25em;
-	background-color: lightsalmon;
-	border-bottom: solid;
-	border-style: dashed;
+	background-color: lightgrey;
 	padding: 1.25em;
 	width: auto;
 	margin-left: 1.25em;
 	margin-right: 1.25em;
+  box-shadow: 0.125em 0.125em 0.125em #333;
 
 }
 
@@ -209,6 +210,7 @@ span {
 			margin-right: auto; 
 			text-align: left;
 			width: 40%;
+			font-size: 1.3em;
 	}
 
 img 
@@ -392,6 +394,7 @@ a:hover, a:active {
 	display: none;
 	padding: 5em;
 	text-align: center;
+	 margin-top: -3.8em;
 }
 
 .prev, .next {
@@ -449,11 +452,36 @@ a:hover, a:active {
   animation-iteration-count: infinite;
 }
 
+@media (min-width: 48em) {
+	h2 {
+		margin-left: 9em;
+	}
+}
+@media (min-width: 64em) {
+	section div {
+		width: 55em;
+	}
+	h2 {
+		margin-left: 15em;
+	}
+}
+
 /* @media (mid-width: 75em) {
 	body {
 		width: 80%;
 	}
 } -->*/
+
+/*
+@media (min-width: 62em){
+ section {
+    flex: 0 0 auto;
+    width: 90%;
+    margin-left: 5em;
+}
+}
+
+}
 
 @media (min-width: 20em) and (max-width: 90em) {
 	body {
@@ -526,7 +554,7 @@ a:hover, a:active {
 
 /* Simple Responsive framework */
 .row {
-	width: 100%;
+	width: 103%;
 }
 /* Large Devices */
 
