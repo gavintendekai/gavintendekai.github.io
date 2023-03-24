@@ -11,6 +11,7 @@ body
 {
 	background: linear-gradient(to left, #F9EBEA, #F2D7D5);
 	font-family: monospace;
+	background-image: url("http://creativity103.com/collections/Paper/rough_paper.jpg");
 }
 
 body > div {overflow-x: hidden;}
@@ -85,15 +86,34 @@ section.Welcome {
     font: monospace;
     text-align: justify-all;
 }
+#projectsection {
+	width: 80%;
+}
+.gallery {
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+  height: 34em;
 
+}
 
+.gallery__img {
+  scroll-snap-align: start;
+  margin-bottom: 10px;
+}
 hr {
 	margin-top: 0em;
 }
 
-img{
+img.sc {
 	width: 5.5em;
 	height: 5.1em;
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 20px;
 }
 span.resume {
 	width: 4.6em;
@@ -238,10 +258,18 @@ div.projectcard {
 		font-size: 1.2em;
 		width: 20em;
 	}
-	img {
+	div.socialmedia {
 		width: 2em;
 		height: 2.5em;
 	}
+
+	#lil1.lil-nav__img
+	{
+  display: block;
+  max-width: 100%;
+	}
+
+ 
 	div.socialmedia {
 		margin-left: -.5em;
 	}
@@ -284,11 +312,11 @@ div.projectcard {
 		font-size: 1,5em;
 		width: 20em;
 	}
-	img {
+	/*div.socialmedia > img {
 		width: 3em;
 		height: 3.5em;
 
-	}
+	}*/
 	div.socialmedia {
 		margin-left: -.5em;
 	}
