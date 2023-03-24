@@ -183,8 +183,28 @@ a {
 	text-decoration: none;
 }
 
+#projectsection {
+	width: 80%;
+}
 
+div.projectcard {
+	margin-top: 5em;
+	background-color: #35D2E5;
+	width: 24em;
+	height: 30em;
+	margin-left: 5em;
+	padding: 2em;
+	border-radius: 10%;
+	box-shadow: 3px 1px 15px black;
+}
 
+#project-text {
+	margin-top: 5em;
+}
+
+#project-header {
+	text-align: center;
+}
 @keyframes float {
   0% {
     transform: translateY(-1em);
