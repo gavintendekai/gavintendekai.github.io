@@ -4,7 +4,7 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+    
 }
 
 body
@@ -12,6 +12,8 @@ body
 	background: linear-gradient(to left, #F9EBEA, #F2D7D5);
 	font-family: monospace;
 }
+
+body > div {overflow-x: hidden;}
 
 h1
 {
@@ -172,6 +174,7 @@ div.Projects {
 }
 
 iframe.chessboard {
+	margin-top: 6em;
 	width: 400px;
 	height: 560px;
 }
@@ -282,32 +285,63 @@ a {
 		font-size: 1.2em;
 	}
 	iframe.chessboard {
-		width: 250px; height: 270px;
+		width: 190px; height: 195px;
 	}
 }
 
-    #talkbubble {
-    	font-size: font-size: 1.2em;
-        margin-top: 5em;
+.fade-out.aos-animate {opacity: 0}
+
+#talkbubble {
+		font: fantasy;
+    font-size: 1.1em;
+    margin-top: 8em;
     padding: 1em;
-    width: 100%;
+    width: 74%;
     height: 90px;
     background: white;
     position: relative;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
-    border-radius: 2px;
-    margin-left: 6em;
-		}
+    border-radius: 52px;
+    margin-left: 15.7em;
+    scroll-behavior: fixed;
+}
 #talkbubble:before {
     content: "";
     position: absolute;
-    right: -155%;
+    right: -185%;
     top: 59px;
     width: 118px;
     height: 0px;
     border-top: 24px solid transparent;
-    border-left: 60px solid white;
+    border-left: 51px solid white;
+    border-bottom: 13px solid transparent;
+}
+
+#talkbubble1 {
+    font: fantasy;
+    font-size: 1.1em;
+    margin-top: -10em;
+    padding: 1em;
+    width: 7%;
+    height: 93px;
+    background: white;
+    position: absolute;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 52px;
+    margin-left: 51.7em;
+    scroll-behavior: fixed;
+}
+#talkbubble1:before {
+    content: "";
+    position: absolute;
+    right: -87%;
+    top: 75px;
+    width: 72px;
+    height: 0px;
+    border-top: 17px solid transparent;
+    border-left: 55px solid white;
     border-bottom: 13px solid transparent;
 }
 

@@ -4,15 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Portfolio</title>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 <link rel="stylesheet" type="text/css" href="styles.css">
 <style>
 </style>
-<script>
-	AOS.init();
-</script>
 </head>
 	<body>
+	<div>
 		<!--<div class = "logo-container">
 		<h1>gavintendekai.github.io</h1>
 		</div>-->
@@ -58,22 +56,54 @@
 					<a href="https://github.com/gavintendekai"><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/github-mark.png?raw=true">
 					</a>
 				</div>
+
+
+			</section>
+			<div class="fade-out" data-aos= "fade-out" data-aos-anchor=".chessboard">
+			<div 
+				id = "talkbubble1" 
+				data-aos="fade-up"  
+				data-aos-anchor=".socialmedia" 
+				easing = "ease-in-out-back"
+				data-aos-anchor-placement="bottom-center" 
+				data-aos-duration ="3000">
+				To visit my social media click the icons
+			</div>
+			</div>
+		</section>
+
+		<section id="projects">
+			<div class="projectcard">
+				
+			</div>
 			
+			<div class="projectcard">
+				
+			</div>
+
+
 		</section>
 
 		<section> 
 
-			<p class = "dailypuzzle"></p>
-			<hr>
-			<div class = "chesspuzzle">
-  <iframe class="chessboard"  src="https://www.chess.com/daily_puzzle" frameborder="0"></iframe>
-</div>
-<div id = "talkbubble" class="topBar" data-aos="fade-in">Wanna solve a chess puzzle?</div>
+						<p class = "dailypuzzle"></p>
+						<div class = "chesspuzzle">
+			  <iframe class="chessboard"  src="https://www.chess.com/daily_puzzle" frameborder="0"></iframe>
+			</div>
 
-		</section>
-		<script src="jquery-3.6.4.min.js"></script>
-		<script src="bootstrap.min.js"></script>
-		<script src="script.js"></script>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	</body>
+			<div id = "talkbubble" class="popup" data-aos="fade-up" data-aos-anchor-placement="bottom-center" data-aos-duration ="3000">Want to solve a Chess puzzle?</div>
+			</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+   		 AOS.init({
+   		 	useClassNames: true,
+  initClassName: false,
+  animatedClassName: 'fade-out',
+
+   		 });
+
+ </script>
+ </div>
+</body>
 </html>
