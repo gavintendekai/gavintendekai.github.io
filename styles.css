@@ -86,14 +86,39 @@ section.Welcome {
     font: monospace;
     text-align: justify-all;
 }
+
+#ExSkills {
+	width: 65%;
+}
+
+p.jobtitle {
+font-weight: bolder;
+font-size: 1.2em;
+}
+
+p.date {
+	margin-top: -1em;
+	font-size: 1em;
+}
+#exp {
+	margin-left: 4em;
+}
+#skll {
+	margin-left: 2em;
+}
+
 p.skill-text {
-	font-size: 1.5em;
+	font-size: 1.8em;
 }
 b {
 	background-color: lightgrey;
-	border-radius: 30%;
+	padding: .285em;
+	border-radius: 35%;
+
 	font-weight: bolder;
 	font-size: 1.45em;
+	margin-right: 1.56em;
+	display: inline-block;
 }
 #projectsection {
 	width: 64%;
