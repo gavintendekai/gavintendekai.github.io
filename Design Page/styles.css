@@ -1,25 +1,147 @@
 html,body
 {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
+
     
 }
 
 body
 {
-	background: linear-gradient(to left, #F9EBEA, #F2D7D5);
-	font-family: monospace;
-	background-image: url("http://creativity103.com/collections/Paper/rough_paper.jpg");
+	
+	background-color: #90F5FF;
 }
 
-body > div {overflow-x: hidden;}
+#header-nav {
+    background-color: #FFDE00;
+    height: 6.5em;
+    border-radius: 0;
+}
 
 h1 {
-    font-family: 'Bungee Shade';
-    font-size: 3em;
-    text-align: center;
-   font-weight: bold;
-   margin-top: 1em;
+    font-family: 'Mouse Memoirs';
+    font-size: 2em;
+    font-weight: bolder;
+    color: #000000;
+
+}
+
+#logo-img {
+    background: url("https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/profile.png?raw=true") center;
+    background-repeat:;
+    background-size: 5em;
+    border-radius: 50%;
+    border: .08em solid hsl(0, 0%, 40%);
+    border-color: black;
+    width: 5em;
+    height: 5em;
+    margin: 0.125em 1.15em 0.125em 0;
+    margin-left: -3em;
+
+
+}
+div.navbar-header {
+    width: 100%;
+}
+#navbutton {
+    position: relative;
+    margin-top: -6em;
+}
+.navbar-brand {
+    padding-top: .4em;
+    text-shadow: .0225em .0225em .0225em #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+a {
+    color: transparent;
+    text-decoration: none;
+}
+
+.navbar-brand p { /* Lessons on webdesign */
+    font-size: 1em;
+    font-family: 'Mouse Memoirs';
+    font-weight: 70;
+}
+#navbutton, #navbuttontoggler { 
+width: 4em;
+height: 5em; 
+ }
+
+ /*#drop {
+    margin-top: -5.5em;
+    margin-right: 1.5em;
+ }*/
+
+
+ #dropButton, .dropdown-item {
+    background-color: #FFE013;
+    color: black;
+    font-family: 'Mouse Memoirs';
+
+ }
+#dropdown-item {
+    background-colour:  #FFE013;
+
+ }
+ .dropdown-item {
+    width: 51%;
+    border: .009em solid;
+ }
+ #menu {
+    background-color: transparent;
+    border-color: transparent;
+ }
+
+
+
+
+#list {
+    margin-left: 10em;
+}
+
+.list-item {c
+    background-colour:  #FFE013;
+    color: black;
+    font-family: "Mouse Memoirs";
+    font-size: 1.5em;
+    margin-left: .4em;
+    
+
+ }
+
+.jumbotron {
+
+
+}
+ #jumboimg {
+
+    height: 24em;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 48em) {
+    #drop {
+
+        margin-left: 16em;
+
+    }
+    #logo-img {
+        margin-left: .1em;
+    }
+    
 }

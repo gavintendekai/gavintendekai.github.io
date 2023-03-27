@@ -7,13 +7,83 @@
 <title>Design Process</title>
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 <link rel="stylesheet" href="bootstrap.min.css">
+<!-- these are the libraries needed to run the nav bar collapse-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 <link rel="stylesheet" type="text/css" href="styles.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Shade">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mouse+Memoirs">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <style>
 </style>
 </head>
+
 <body>
-    <h1>Design Overview</h1>
+<header>
+<!-- The nav is outsite the div "container" class because we want it to stretch all the way past the container-->
+<nav id="header-nav" class="navbar navbar-default">
+<div class="container">
+
+        <!-- This class "d-none d-md-block d-xl-none" displays the logo only on medium and large devices (Make sure to always reference Bootstrap Documentation) -->
+         <div class="navbar-header d-flex align-items-center"><a href="index.html"  class="d-none d-md-block d-xl-block"><div id="logo-img" class="float-start"></div></a>
+        
+        <div class="navbar-brand">
+            <a href="index.html"><h1>Design Overview</h1></a>
+
+            <p> A brief summary of the lessons on web design </p>
+         </div>
+
+        <div id="drop" class="dropdown float-end d-sm-block d-md-block d-lg-none d-xl-none">
+          <button id="dropButton" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="navbar-toggler-icon"> </span>
+          </button>
+          <div id= "menu" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Client<span class="material-icons">face</span>
+            <a class="dropdown-item" href="#">Planning<span class="material-icons">receipt_long</span></a>
+            <a class="dropdown-item" href="#">Framing<span class="material-icons">architecture</span></a>
+            <a class="dropdown-item" href="#">Coding<span class="material-icons">terminal</span></a>
+          </div>
+        </div>
+
+        <div id="list" class="d-lg-block d-xl-block d-sm-none d-none">
+        <a class="list-item" href="#"><span>Client</span><span class="material-icons">
+            face</span></a>
+
+        <a class="list-item" href="#">
+            <span>Planning</span>
+            <span class="material-icons">receipt_long</span>
+        </a>
+
+        <a class="list-item" href="#">
+            <span>Framing</span>
+            <span class="material-icons">
+            architecture
+            </span>
+        </a>
+        <a class="list-item" href="#"><span>Coding</span><span class="material-icons">
+        terminal
+        </span></a> 
+        </div>
+
+
+
+        </div>
+</nav>
+
+
+    </header>
+
+<div id="main-content" class="container">
+    <div class="jumbotron">
+
+        <img id="jumboimg" class="img-fluid w-100" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/989bd361-968e-4c4c-bf51-8583b14a79eb/dfr4zqo-f0c70c11-45c6-452b-b96f-658136074f0d.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzk4OWJkMzYxLTk2OGUtNGM0Yy1iZjUxLTg1ODNiMTRhNzllYlwvZGZyNHpxby1mMGM3MGMxMS00NWM2LTQ1MmItYjk2Zi02NTgxMzYwNzRmMGQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.eWWdfK6M2E9k1qgjCfFDjPzabHpPLG1PTCBRheiLj_s">
+
+    </div>
+    
+
+
+</div>
 
 
 <script src="jquery-3.6.4.min.js"></script>
