@@ -47,21 +47,21 @@
         </div>
 
         <div id="list" class="d-lg-block d-xl-block d-sm-none d-none">
-        <a class="list-item" href="client.html"><span>Client</span><span class="material-icons">
+        <a class="list-item" href="#"><span>Client</span><span class="material-icons">
             face</span></a>
 
-        <a class="list-item" href="planning.html">
+        <a class="list-item" href="#">
             <span>Planning</span>
             <span class="material-icons">receipt_long</span>
         </a>
 
-        <a class="list-item" href="framing.html">
+        <a class="list-item" href="#">
             <span>Framing</span>
             <span class="material-icons">
             architecture
             </span>
         </a>
-        <a class="list-item" href="coding.html"><span>Coding</span><span class="material-icons">
+        <a class="list-item" href="#"><span>Coding</span><span class="material-icons">
         terminal
         </span></a> 
         </div>
@@ -73,65 +73,41 @@
 </nav><!-- End of NAV-HEADER-->
 </header>
 
+<div id="trigger"></div>
 
 <div id="main-content" class="container">
-    <div class="jumbotron">
 
-        <img id="jumboimg" class="img-fluid w-100" src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/clouds.jpg?raw=true"><span id="img-text" data-aos="zoom-in"  
+<div id="Visit" class="row d-flex">
+
+<div id="scrollhere" class="fade-out fade-out-trigger">
+    <span class="scrolltext">Scroll Down to View the Information</span>
+</div>
+ <div class="col-xl-4 col-md-4 col-sm-6 col-12" data-aos="zoom-in"  
                 easing = "ease-in-out-back"
-                data-aos-anchor-placement="bottom-center" 
-                data-aos-duration ="3000"> [INSERT YOUR DESIGN HERE] <img id="ballons" src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/ballons.gif?raw=true"></span>
+                data-aos-anchor-placement="top-top" 
+                data-aos-duration ="3000">
 
-    </div> <!-- END OF JUMBOTRON -->
-
-<div id="home-tiles" class="row">
-
-    <div class="col-xl-4 col-md-4 col-sm-6 col-12">
-        <a href="client.html">
-            <div id="clientile" data-aos="fade-up"  
-                easing = "ease-in-out-back"
-                data-aos-anchor-placement="bottom-bottom" 
-                data-aos-duration ="3000"
+            <div id="questions"
                 >
-                <span>Client</span>   
-            </div>
-        </a>
-    </div>
+                <span><h3>Most clients have no idea what they want.</h3> <b>It's not that they're ignorant</b>. In fact, they're very smart about their own business. They usually have no idea as to what they want on the website and how the whole thing works. So, it's really your job to <b>ask questions</b>. </span> 
 
-    <div class="col-xl-4 col-md-4 col-sm-6 col-12">
-        <a href="Planning.html">
-            <div id="planningtile" data-aos="fade-up"  
+            </div>
+</div>
+
+<div class=" col-xl-4 col-md-4 col-sm-6 col-12" data-aos="zoom-in"  
                 easing = "ease-in-out-back"
-                data-aos-anchor-placement="bottom-bottom" 
+                data-aos-anchor-placement="top-top" 
                 data-aos-duration ="3000">
-                <span>Planning</span>   
+            <div id="questions"> 
+                <span> <h3>Ask the right questions</h3> the <b>right questions</b> to help the client figure out what it is that they want and kind of communicate that back to you. A great way of doing it is if you bring some website examples of similar businesses that already have websites and have the client react to those websites. </span>   
             </div>
-        </a>
     </div>
+</div>
+    
 
-    <div class="col-xl-4 col-md-4 col-sm-6 col-12">
-        <a href="Framing.html">
-            <div id="frammingtile" data-aos="fade-up"  
-                easing = "ease-in-out-back"
-                data-aos-anchor-placement="bottom-bottom" 
-                data-aos-duration ="3000">
-                <span>Framming</span>   
-            </div>
-        </a>
-    </div>
+</div>
 
-    <div class="col-xl-4 col-md-4 col-sm-6 col-12">
-        <a href="Coding.html">
-            <div id="codingtile" data-aos="fade-up"  
-                easing = "ease-in-out-back"
-                data-aos-anchor-placement="bottom-bottom" 
-                data-aos-duration ="3000">
-                <span>Coding</span>
-            </div>
-        </a>
-    </div>
-
-</div><!-- END OF HOME-TILES -->
+</div> <!-- END OF VISIT -->
 
 </div> <!-- END OF MAIN CONTENT -->
     
@@ -147,6 +123,31 @@
 <script>
  AOS.init({
  });
+
+</script>
+
+<script type="text/javascript">
+function isElementInViewport(element) {
+const rect = element.getBoundingClientRect();
+return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+const element = document.querySelector('.fade-out');
+
+function handleScroll() {
+  if (isElementInViewport(element)) {
+    element.classList.add('fade-out-trigger');
+  } else {
+    element.classList.remove('fade-out-trigger');
+  }
+}
+
+window.addEventListener('scroll', handleScroll);
 
 </script>
 </body>

@@ -31,6 +31,25 @@ h2 {
     color: #000000;
 }
 
+h3 {
+    font-family: 'Mouse Memoirs';
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: #000000;
+    background-color: #FFDE00;
+    border-radius: 5%;
+    text-align: center;
+    padding: 2px;
+}
+#questions {
+    background-color: whitesmoke;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#Visit {
+    overflow: hidden;
+}
 #logo-img {
     background: url("https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/profile.png?raw=true") center;
     background-repeat:;
@@ -103,19 +122,46 @@ height: 5em;
  }
 
 
+.scrolltext {
+
+    font-family: 'Mouse Memoirs';
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: #000000;
+    background-color: #FFDE00;
+    border-radius: 5%;
+    text-align: center;
+    padding: 2px;
+    
+}
 
 
+#scrollhere {
+    position: absolute;
+    margin-left: 23em;
+    margin-top: 12em;
+}
+.fade-out {
+    
+}
+.fade-out-trigger {
+    animation: fadeOut 3s ease-out 4s;
+}
+
+@keyframes fadeOut {,
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
 #list {
     margin-left: 10em;
 }
 
-.list-item {c
+.list-item {
     background-colour:  #FFE013;
     color: black;
     font-family: "Mouse Memoirs";
     font-size: 1.5em;
     margin-left: .4em;
-    
 
  }
 
@@ -136,6 +182,13 @@ height: 5em;
     width: 5em;
     margin-left: -6em;
  }
+
+ #questions {
+margin-top: 2em;
+font-family: "Mouse Memoirs";
+font-size: 1.3em;
+}
+
  #img-text {
     position: absolute;
     margin-left: -19em;
