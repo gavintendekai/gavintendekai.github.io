@@ -126,8 +126,15 @@ height: 5em;
  #jumboimg {
 
     height: 24em;
-    border-radius: 6%;
+    border-radius: 8%;
     margin-top: .5em;
+ }
+
+ #ballons {
+    position: absolute;
+    margin-top: -3.7em;
+    width: 5em;
+    margin-left: -6em;
  }
  #img-text {
     position: absolute;
@@ -159,6 +166,9 @@ height: 5em;
         
     }
 
+#web, #Inspirations, #icons {
+    line-height: 2;
+}
 
 
 @keyframes flow {
@@ -191,6 +201,8 @@ height: 5em;
     padding-top: 35px;
     padding-bottom: 30px;
     background-color: #F0B800;
+    font-family: 'Mouse Memoirs';
+    font-size: 1.2em;
 }
 @media (min-width: 48em) {
     #drop {
@@ -216,4 +228,67 @@ height: 5em;
 }
 
 
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 320px) and (max-width: 400px) { 
+    #img-text {
+    margin-left: -9em;
+
+
+ }
+
+ h1 {
+    font-size: 1.5em;
+ }
+
+ .navbar-brand p {
+    font-size: .8em;
+
+}
+
+#codingtile, #clientile, #planningtile, #frammingtile {
+    width: 95%;
+}
+}
+
+@media (min-width: 425px) { 
+    #img-text {
+    margin-left: -10em;
+
+ }
+ #codingtile, #clientile, #planningtile, #frammingtile {
+    width: 100%;
+}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+
+#img-text {
+    margin-left: -15em;
+}
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+#img-text {
+    margin-left: -19em;
+}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+#img-text {
+    margin-left: -25em;
+
+}
+ #codingtile, #clientile, #planningtile, #frammingtile {
+    width: 100%;
+}
+ .col-xl-4 {
+    flex: 0 0 auto;
+    width: 24.333333%}
 }
