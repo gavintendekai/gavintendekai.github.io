@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JavaScript</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styles.css"/>
+<style>
+</style>
+</head>
+<body>
+
+<!-- This is my first commment! Let's go! --> 
+<h1>JavaScript</h1>
+
+<div class="slideshow-container">
+	
+		<div class="mySlides"><a href="#Introduction">Introduction</a></div>
+	
+		<div class="mySlides"><a href="#Variables">Defining Variables, Function, and Scope</a></div>
+
+		<div class="mySlides"><a href="#CSS">Power of CSS</a></div>
+
+		<div class="mySlides"><a href="#CSSAnatomy">Anatomy of CSS</a></div>
+
+		<div class="mySlides"><a href="#Combselectors">Combining Selectors</a></div>
+
+		<div class="mySlides"><a href="#Pseudo-class">Pseudo-Class Selector</a></div>
+
+		<div class="mySlides"><a href="#styleplacement">Style Placement</a></div>
+
+		<div class="mySlides"><a href="#conflict">Conflict Resolution</a></div>
+
+		<div class="mySlides"><a href="#boxmodel">The Box Model
+		</a></div>
+
+		<div class="mySlides"><a href="#floating">Floating
+		</a></div>
+
+		<div class="mySlides"><a href="#positioning">Positioning
+		</a></div>
+
+		<div class="mySlides"><a href="#Media">Media Query
+		</a></div>
+
+		<div class="mySlides"><a href="#RDesign">Responsive Design
+		</a></div>
+
+			<div class="mySlides"><a href="#Bootstrap">Twitter Bootstrap
+		</a></div>
+
+
+		<div class="mySlides"><a href="https://github.com/jhu-ep-coursera/fullstack-course4/blob/master/FAQ.md">FAQ</a></div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+  <span class="dot" onclick="currentSlide(11)"></span>
+  <span class="dot" onclick="currentSlide(12)"></span>
+  <span class="dot" onclick="currentSlide(13)"></span>
+  <span class="dot" onclick="currentSlide(14)"></span>
+   <span class="dot" onclick="currentSlide(15)"></span>
+</div>
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+<!-- <div class="image-container">
+<div class="image">
+<img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/pageguy.gif?raw=true" class="gifguy">
+</div>
+ 
+ <div class="image-text">
+ 	<a style="font-size: 2em;"> 
+ 	&#129414; </a> Welcome to my HTML,CSS, AND JAVA lesson page!
+ 	You can use the selector above to go to a specific lesson.
+ </div>
+</div> -->
+<article class="container">
+<section id ="Introduction" class="row">
+<div class="col-lg-3">
+<h2>Introduction</h2>
+
+<div>
+	<h3>The Power of JavaScript</h3>
+		<p>JavaScript is a powerful programming language that can add interactivity to a website. It was invented by Brendan Eich. JavaScript is one of the most used programming languages out there. Yet a lot of people don't really appreciate it's power. This is largely due to the lack of understanding of the language fundamentals. This is why learning its <b>fundamentals</b> is crucial. </p> <p> Another reason why JavaScript doesn't have such a great reputation is historical. In the early days of the web, the browsers implemented JavaScript support much in the same way they implemented HTML support, however they pleased. This called a lot of heartache for developers because you couldn't be certain that your code would run in the same way in all browsers. In addition, JavaScript used to lack tooling and frameworks that ease the difficulties with everyday programming. While things aren't perfect nowadays either they're much better. There are quite a number of good editors that support JavaScript development and a hefty number of frameworks and libraries that simplify programming JavaScript today.</p>
+
+<h3>Learning Resources</h3>
+<p> These are a few resources to kept track:</p> 
+	<ul> 
+		<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics"> developer.mozilla.org</a> offers a useful crash course on the basic ideas behind Javascript</li>
+		<!--<li> This is WHATWG's spec <a href = "https://html.spec.whatwg.org/multipage/#toc-introduction/"> website</a></li>
+		<li>This <a href = "https://validator.w3.org/">website </a> validates your webpage</li>
+		<li> W3schools.com's <a href = "https://www.w3schools.com/browsers/"> browser statistics </a> is helpful to look at other browsers and their market share </li>-->	
+ 	</ul>
+
+<p> <b> Remember: You have to constantly look things up and keep track of changes.</b></p>
+</div>
+</div>
+</section>
+
+<p></p>
+
+<section id = "Variables" class="row">
+
+<div class="col-lg-3">
+				<h2>Defining Variables, Function, and Scope</h2>
+				<div>
+
+				<p>It is usually pretty straightforward to define a variable. Note: Variable definitions must always start with the keyword <b>var</b></p> 
+
+				<h3>Elements and Attributes</h3>
+					<p> This is an example of an html line, <b>&lt;p&gt; &lt;/p&gt;</b>.</p> 
+					<p> In the following, I will explain what each character means. </p>
+					<ul>
+						<li>
+							<b>&lt;p&gt;</b> or <b>&lt;h1&gt;</b> or <b>&lt;br&gt;</b> are what is called element names.
+						</li> 
+						<br>
+						<li> 
+							<b>&lt;p&gt;</b> is an <b> opening tag </b> while <b>&lt;/p&gt;</b>is a <b>closing tag </b>.
+						</li> 
+						<br>
+						<li>
+							Some elements do not have a closing tag, <b>&lt;br&gt;</b> and <b>&lt;hr&gt;</b> are good example of this.
+						</li>
+						<br>
+						<li>
+							This is an example of an attribute within a tag, <b>&lt;p id = "myId"&gt; &lt;/p&gt;</b>. An attribute can only be specified in the opening tag. 
+						</li> 
+						<br>
+						<li>
+							This is an example of a no content tag <b>&lt;p&gt;&lt;/p&gt;</b>. This tag is correct, while this tag <b>&lt;p\&gt;</b> is incorrect</p>
+						</li>
+					</ul>
+				<h3>HTML tags </h3>
+				<p> We also looked as some html tags such <b>&lt;html&gt</b>;, <b>&lt;head&gt;</b>, <b>&lt;meta&gt;</b>, and <b>&lt;title&gt;</b>. A key reminder is that html is rendered sequentially meaning top to bottom.</p>
+
+				</div>
+</div>
+</div>
+</section>
+
+<p></p>
+
+<section id="CSS" class="row">
+<div class="col-lg-3">
+	
+				<h2>Power of CSS</h2>
+				<div>
+				<p> CSS works by associating rules with HTML elements. CSS in an incredibly powerful technology. This tool helps to tailor how users absorb and relate to content. Structure alone enough. You need to style your content in way that pleasing to the user.</p>
+
+				<ul><li>User eperience of content matters</li></ul>
+
+				<p><a href ="https://csszengarden.com/">CSS Zen Garden</a> is a useful resource that shows the power of CSS. The HTML code is the same but using CSS the creators can show a variety of ideas and designs</p>
+				</div>
+</div>
+</section>
+
+<p></p>
+<p></p>
+<section id ="CSSAnatomy" class="row">
+<div class="col-lg-3">
+
+				<h2>Anatomy of a CSS Rule</h2>
+				<div>
+				<p>
+				<h3>Two main parts</h3>
+				A CSS rule consists of 2 main parts:</p>
+				<ol>
+					<li>The first part is the <b>selector</b>, which says what ever rules I am going to specify should apply to every kind of element in my page: <br> <img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/selector.JPG?raw=true"><p>In this case the rule is being applied to all the paragraphs <b>p</b> in the page. </p></li>
+					
+					<li>The second part is the <b>declaration</b> which is inside the brackets and it consits of two parts the property and value: <br><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/declaration.JPG?raw=true"><p>For every property there is a set number of values such <b>blue</b> or a numerical value. The property is predefined by CSS speficification. There can zero or more declarations:</p> <img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/moredeclaration.JPG?raw=true"></li>
+					
+					<li>The collection of the CSS Rules is called a stylesheet:<img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/stylesheet.JPG?raw=true">
+					</p></li>
+				</ol>
+
+				<p>
+				<h3>Three types of selectors</h3>
+				There are three types of selectors: element selector, class selector, and id selector </p>
+				<ol>
+					<li>The element selector refers to you specifyting the element selector such as "p" or "div". <img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/selector.JPG?raw=true"></p>
+					</li>
+					<li>The class selector is specified with a dot and the name of the class. You define the class with a dot and use it without a dot. <img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/cselector.JPG?raw=true"></p>
+					</li>
+					<li>The id selector is specified with a pound sign "#" and it is the value of some id in the html document. E.g., the class speficied "#blue &#123;color: blue;&#125;," can be used inside a div element as an id, &lt;div class = "blue"&gt;." 
+					<img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/idselector.JPG?raw=true"></p>
+					</li>
+					<li>Selectors can also be grouped together. Also you can use "*" to define all elements on the page. <<img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/groupingselectors.JPG?raw=true"></p>
+					</li>
+				</ol>
+
+				</div>
+</div>
+</section>
+
+<p></p>
+<p></p>
+<section id = "Combselectors" class="row">
+<div class="col-lg-3">
+			<h2>Combining Selectors</h2>
+				<div>
+				<p>Combining selectors is a more precise way to target dumb elements. Here we will look some the most common ways of combining selectors.</p>
+				
+				<h3>Class Selector</h3>
+				The first one is a <b>p</b> selector which has a <b>dot</b> big class selector: <br> <img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_1.JPG?raw=true"><p>This expresses that we want to target every "p" element that has an attribute class equal to big. Note: there are no spaces between <b>p</b> and <b>dot big</b>.</p><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_2.JPG?raw=true"></p><p>Notice here that only the <b>p</b> elements that have a class equal to big will be affected while the "div" element is unaffected.</p>
+					
+				<h3>Child Selector</h3>
+				The second type of selector is a child selector. The sytanx is a selector followed by another selector. <img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_3.JPG?raw=true"></p><p> This way of combining is read from right to left. Meaning that the <b>p</b> element is a direct child of an "article" element.</p><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_4.JPG?raw=true"></p> The only <b>p</b> element that is affected is a direct child to <b>article</b> as opposed to a regular <b>p</b> which will be unaffected. Also note, <b>p</b> not a direct child of <b>article</b> will be unaffected. Since it contained in the <b>div</b>  it is not a direct child of <b>div</b>.</li>
+					
+				<h3>Descendent Selector</h3>
+				Another type of selector is a descendent selector. The syntax is selector space selector. It targets every <b>p</b> that is inside (at any level) of article. <br><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_5.JPG?raw=true"> 
+
+				<p>Even if <b>p</b> is not a direct child of <b>article</b>, but as long one of its parents in its ancestry is an <b>article</b> the rule will apply.</p><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_7.JPG?raw=true"></p><p> The both <b>p</b>elements in <b>article</b> will turn blue, despite the second being part of <b>div</b> and not a direct child.
+
+				<h3> Other types of combinations </h3>
+				Selector combinations are not limited to element selectors.<br><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/combselect_6.JPG?raw=true"> 
+
+				<p>The first combination, <b>.colored p</b> says that every <b>p</b> that is inside, at any level, an element with a class equal to coloured will turn blue. The second one says that every element with <b>class = ".coloured"</b> that is a direct child of <b>article</b> will turn blue.</p>
+
+			</div>
+</div>
+</section>
+
+<p></p>
+
+<section id ="Pseudo-class" class="row">
+<div class="col-lg-3">
+			<h2>Pseudo-Class Selectors</h2>
+				<div>
+					<h3>What are Pseudo-Class selectors</h3>
+					<p>Pseudo-Class Selectors address targeting the combinations of regulars selectors, or targeting the ability to style based on user interaction with the page.</p><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/pseudo_1.JPG?raw=true"></p><p> You can use this styling to change, for example, when the user hovers their mouse over that element</p>
+
+					<p>The way you specify a pseudo-class selector is by specifying some selector that we already know about with a collon followed by a predefined pseduo-class name<p><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/pseudo_1.JPG?raw=true"></p>
+
+					<p>Many pseudo-class selectors exist. In the lecture these are the ones we covered:</p>
+					<ul>
+					<li> <b>&#58;link</b></li>
+					<li><b>&#58;visited</b></li>
+					<li><b>&#58;hover</b></li>
+					<li><b>&#58;active</b></li>
+					<li><b>&#58;nth-child</b></li>
+					</ul> 
+
+					<div class="example2">
+					<h3>Example</h3>
+
+					<p>In this example, I used the <b>&#58;link</b>, <b>&#58;visited</b>, <b>&#58;hover</b>, and <b>&#58;active</b> pseudoselectors to change the style of this website's hyperlinks:</p>
+
+					<img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/pseudo_3.JPG?raw=true">
+
+					
+					<p>This is a link to chess.com. Click <a href ="https://www.chess.com/home">here</a> to access it</p>
+
+					<p>
+					Notice when you hover over the link the background colour changes.&#128515;
+					</p>
+
+					</div>
+</div>
+</div>
+</section>
+
+<p></p>
+
+
+<section id = "styleplacement" class="row">
+<div class="col-lg-3">
+<h2>Style Placement</h2>
+			<div>
+				<p>Your style placement affects how reusable the styles are and it also affects which style declarations override other style declarations.</p>
+
+				<p>You can also insert a CSS style inside a element. But you should not use it. It is not coding practice. Inserting your stlying inside the head tag is usual practice.</p> <p> You can use an external style sheet assuming it is in the same directory as your html file.</p>
+
+				<ol>
+					<li>Placing styles inline is great for quick testing</li>
+					<li>Real sites almost always use external styles</li>
+					<li>Head styles are usually there to override external ones</li>
+				</ol>
+			</div>
+</div>
+</div>
+</section>
+
+<p></p>
+
+<section id = "conflict" class="row" class="conflict" >
+<div class="col-lg-3">
+<h2>Conflict Resolution</h2>
+<div>
+	<p>Your style placement affects how reusable the styles are and it also affects which style declarations override other style declarations.</p>
+
+	<h3> Cascading </h3>
+	<p>Cascading is a fundamental feature of CSS. It's an algorithm defining how to combine properties values originating from different sources. As the name itself suggests, cascading style sheets, in other words the cascade algorithm, is at the core of understanding and using CSS. The cascade combine the importance, origin, specificity and source order of the applicable style declarations to determine exactly which declaration should be applied to any given element. And if there's a conflict, how to resolve that conflict. In other words, how to tell which CSS rule wins. </p>
+
+	<h3>Four Crucial Concepts</h3>
+	<p>To understand how cascading works it is crucial to understand these four concepts:
+
+	<ol>
+		<li> <h3>Origin or Origin Precendence </h3><p>
+			<ul>
+				<li>When two declarations are in conflict, in other words they specify the same property for the same target, origin precedence rule kicks in, and it's a very simple rule. And the rule is, <b>the last declaration wins</b>.</li> 
+
+				<li>Now, when trying to figure out what the last declaration is, you have to remember that HTML is processed sequentially. That means top to bottom. So as you see the declarations happen, the <b>lower on the page</b> they are, <b>the more precedence they have</b>. And also for precedence, think of external CSS as declared at the spot where it's linked to. So usually it's declared in the head somewhere, but there could be other styles that I declared in the head. And to figure out which one was declared last, imagine that the entire contents of an external CSS file were cut and pasted straight into the head portion, where that external CSS is declared.</li></p>
+			</ul>
+		</li> 
+				
+		<li><h3>Merge</h3>
+			<ul>
+				<li><p> When different CSS declarations do not conflict, that is, they still target the same element, but the CSS properties with which they target that element are different, there's even a simpler rule. And that is that declarations merge. So a declaration for, for example, font size, and a declaration for color, since they're two different properties, when they're targeted to the same element, even if they're targeted from two different origins, they will merge into one. And the element will get both the font size and the color.</p>
+				</li>
+			</ul>
+		</li>
+
+
+		<li><h3>Inheritance</h3> 
+			<ul> 
+				<li><p>The basic idea is that you have the document object model tree. And if you specify some CSS property on some element, all the children and grandchildren and so on and so on of that element will also inherit that property without you having to specify the property for each and every element. So for example, if I specify one property on the body tag, every element that is a child of a body tag, or even a child of a child of a body tag and so on, will inherit that property.</p> <img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/inheritance.JPG?raw=true"></p>
+				</li>
+			</ul>
+		</li>
+		<li><h3>Specificity</h3>
+			<ul>
+				<li><p>Specificity has a pretty simple rule,]and that the most specific selector combination wins.</p> <img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/specificity.JPG?raw=true"></p>
+					</li>
+				<li>You think of the selectors as keeping a score, the selectors with highest score wins. The selector with highest score would be considered the most specific.
+			 		</li>
+				<li>
+				It's easier to calculate the score if you arrange the types of things that affect the score from left to right, with the left being the highest value of specificity. Then simply take your CSS rule and fill in the number of times you see a particular type of selector being used in it's proper location. The number that's created is your final score. On the screen, the most specific targeting that exists in CSS doesn't actually use any selectors at all and that is the style attribute on an element. The ID, Class, pseudo-class, attribute, and # of elements.
+					</li>
+				<li><p>In this instance we are using a style attribute inside the h2 element. This produces a score of 1000 and it is the highest score you can get. The rest of the selectors get zeros.</p>
+				<img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/specificity_1.JPG?raw=true"></p>
+					</li>
+				<li><p>In this instance there is no definition inside the style atribute which is zero, no id which is zero, no class which is zero, and it defines two elements "div" and "p" which is equal to two.</p><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/specificity_2.JPG?raw=true"></p>
+					</li>
+				<li><p>With these two cases, we try to figure which selector combinations would win.</p><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/specificity_3.JPG?raw=true"></p>
+					</li>
+				<li><p>The combination on the left would win since it has a higher score.</p><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/specificity_4.JPG?raw=true"></p>
+					</li>
+
+				<li><p>You can override all these rules with "! important". Avoid using important unless you absolutely have to use it.</p>
+					</li>
+			</ul>
+		</li>
+	</ol>
+</div>
+</div>
+</section>
+
+
+<p></p>
+
+<section id = "boxmodel" class="row">
+<div class="col-lg-3">
+<h2>The Box Model</h2>
+<div>
+<p>Every element is considered a box. But there is more to the box more than the content the box wraps around.</p>
+<h3> What is the box model?</h3>
+<p>
+ The box model refers to the components that make up an HTML box as well as the rules that govern how these box components affect the layout as well as how width and height of the box are calculated.
+</p><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/boxmodel.JPG?raw=true"></p>
+
+<p>When you have two boxes next to each other horizontally, they add up to get a culmulative margin.<img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/boxmodel_1.JPG?raw=true">
+</p>
+<p>When you have two boxes on top of each other they colaspe and the larger margins wins.<img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/boxmodel_1.JPG?raw=true">
+</p>
+<p>
+	The Box model - essential to understand
+<ul>
+	<li>Prefer box-sizing: border-box</li>
+	<li>The * universal selector</li>
+	<li>Cumulative and collapsing marging</li>
+	<li>Content overflow</li>
+</ul>
+</ul>
+</p>
+
+</div>
+</div>
+</section>
+
+<p></p>
+
+<section id ="floating"  class="row" class= "float">
+	<div class="col-lg-3">
+	<h2>Floating</h2>
+	<div>
+	<h3> What the float?</h3>
+	<p>Now knowing how to properly float elements is an essential skill to have, and this is partially because most of the UIs today, web UIs today that are made, are made by floating the elements.</p>
+	<ul>
+<li>
+	 <p> This styling attribute can be used by "float: right" or "float: left".
+</p></li>
+<li>
+	 <p>If floated elements overlap each other, you can use "clear: left" or "clear: right," depending on the context this allow the elements to space out.</p>
+</li>
+<li>
+	<p> Floating elements can produce very flexible layouts. </p>
+</li>
+<li>
+	<p> Floats are taken out of normal document flow </p>
+</li>
+</ul>
+	
+<div class= "float2">
+	<h3>Example</h3>
+	<div>
+	<p>This is an example of how float can look like when used inside your webpage</p>
+	
+	</div>
+</div>
+<div class= "float3">
+	<h3>Example</h3>
+	<div>
+	<p>This is an example of how float can look like when used inside your webpage</p>
+	</div>
+</div>
+</div>
+</div>
+</section>
+
+<p></p>
+
+<section id = "positioning" class="row">
+<div class="col-lg-3">
+<h2>Positioning</h2>
+<div>
+<h3> Positioning Property</h3>
+	<p> 
+		The <b>position</b> property in CSS has four legal values  &#40;in addition to the ubiquitous <b>inherit</b>&#41;:
+		<ul> <li><b>static</b></li>
+			<li><b>relative</b></li>
+			<li><b>absolute</b></li>
+			<li><b>fixed</b></li>
+		</ul>
+	</p>
+
+	<p> These two values <b>static</b> and <b>relative</b> are closely related. <b>Absolute</b> and <b>fixed</b> are also closely related. 	These schemes allow you to specify precise offsets to move the target element to the different part of the page origin.</p>
+
+	<h3> Rectangles </h3>
+
+	<p> In HTML when an element is rendered on a computer screen or printed on paper, those elements generate rectangular boxes. Just as the set of HTML elements is divided into block-level elements and inline elements, boxes in CSS are essentially either block boxes or inline boxes. </p>
+
+	<p> <b>p</b> and <b>div</b> generate bock boxes, while inline elements such as <b>strong</b> and <b>span</b> generate inline boxes. We can control the type of box that is generated using the <b>display</b>.
+
+	<h3>Static positioning</h3>
+	<p>Boxes with <b> position: static</b> are not really "positioned" at all in the CSS sense. They appear in way they are already ordered in mark up and take up as much space as they need. This is default behavior.
+
+	<p> There are significant difference in how block boxes and in-line boxes are laid out. </p>
+
+	<h3> Block box layout</h3>
+	<p> Unless specified, block boxes are laid out vertically from top to bottom in the order they occur in the markup. </p>
+	<ul> <li> Each box is normally as wide as the document&#40;the <b>body</b> element&#41;, even if we make them narrower they will still be laid out below one another.</li>
+		 <li> The vertical distance is controlled by the <b>margin-bottom</b> and <b>margin-top</b> properties.</li>
+		 <li> Dimensions can be specified using <b>width</b> and <b>height</b></li>
+		 <li> The default value for  <b>width</b> and <b>height</b> is <b>auto</b>. This means a block box will be wide as its parent</li>
+	</ul>
+
+	<div class="example">
+	<p> Example </p>
+	<p> These two <b>p</b> elements are block boxes. This italic <i style="background-color: lightseagreen;">inline text</i> is an example of an inline box.</p>
+	<p> These two <b>p</b> elements are block boxes. This italic <i style="background-color: lightseagreen;">in-line text</i> is an example of an inline box. </p>
+	<p> </p>
+	</div>
+
+<h3> Inline box layout</h3>
+	<p> Inline bozes appear horizontally as they are ordered in markup.</p>
+	<ul> <li> Using the <b>direction</b> property, the inline boxes will either be laid out from left to right &#40;<b>direction:ltr</b>&#41; or from right to left &#40;<b>direction:rtl</b>&#41;</li>
+		 <li> The height of the line boxes can be changed using <b>line-height</b></li>
+		 <li> It is important to note, for inline boxes you can not change or specify an dimensions. You can only specify horizontal margins, but not vertical margins.</li>
+		 <li> The inline box, if necessary, will be split into several inline boxes, distributed over two or more inline boxes. When this split occurs, any horizontal margins and padding, and any vertical borders, will apply before the first box and after the last box.</li>
+	</ul>
+
+	<p>To vertically align inline boxes within the the encompassing line box, you can use the <b>vertical-align</b> propery. <ul><li>The default value is <b>baseline.</b> Meaning the boxes are aligned so their text baselines line up.</li></ul>
+
+	<!--<div class= "inline">
+		<h3>Example</h3>
+		<div>
+			<p >This is an example of how inline boxes, if splot into several inline boxes, can look like when used inside your webpage</p> 
+		</div>
+	</div> -->
+
+
+	</p>
+
+<h3> Relative Positioning</h3>
+
+ <p> Relative positioning is more closely related to static "positioning" compared to absolute and fixed positioning. </p><p><b>Static</b> <b>position</b> is a way of saying 'normal document flow'. This is the default for all, expect HTML. Positioning offsets set to static are ignored.</p>
+
+<p> An element with <b>position:relative</b> is laid out like any static element; block-level or inline. However, when generated the box can be arranged according to:<ul> <li> <b>top</b>, <b>bottom</b>, <b>left</b>, and <b>right</b> &#40;offset&#41; properties. </li></ul></p>
+
+<p> The element is NOT taken out of normal document flow </p>
+			<ul> <li>Even if moved, its original spot is preserved</li>
+				<li> As far as other elements are concerned, the element 'takes up space' in the original document flow. </li>
+			</ul>
+<p> The properties specify the <i>edge</i> that the movement is put up to as opposed to <i>direction</i> of movement. The <b>top</b> property shifts the box relative to it's top edge, the <b>left</b> relative to it's left edge, etc. 
+
+<div class= "pos1">
+	<h3>Example</h3>
+	<div>
+	<p>This is an example of how relative position can look like when used inside your webpage</p> </div>
+	
+	</div>
+</div>
+
+	<p> The original spot is preserved in our html document. But this box displays skewed to the right on our webpag<img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/pos1.JPG?raw=true"> </p>
+	
+	<p> Also, note that <b>top: 1em</b> and <b>bottom: -1em</b> specify the same position. Therefore, it is pointless to specify both the <b>top</b> and <b>bottom</b> properties &#40;or <b>left</b> and <b>right</b>&#41; for the same element. </p>
+
+	<p> The rule in CSS is that <b>bottom</b> should be ignored, if <b>top</b> is specified. </p>
+
+	<p> <b> Absolute </b> positioning is based on the idea that all offsets &#40;<b>top</b>,<b>bottom</b>,<b>left</b>,<b>right</b>&#41; are relative to the position of the nearest ancestor which has positioning set on it, other than static</p>
+	<ul><li>By default, html is the only element that has non-static positioning set on it (relative.</li><li>Element is taken out of normal document flow, if it is set to absolute.</li></ul> 
+<p></p>
+
+
+<p>An absolutely positioned element no longer exists in the normal document flow. Instead, it sits on its own layer separate from everything else. This is very useful: it means that we can create isolated UI features that don't interfere with the layout of other elements on the page.</p>
+
+<p> Read more about static and relative positioning <a href="https://www.w3.org/wiki/CSS_static_and_relative_positioning?viewType=Print&viewClass=Print">here </a>
+
+</div>
+</div>
+</section>
+
+<p></p>
+
+<section id ="Media" class="row">
+<div class="col-lg-3">
+<h2>Media Queries</h2>
+<div>
+	<p>Media queries allow you to group styles together and target them to devices based on some criteria. You can target a device based on its width, height, or orientation like landscape of potraint.</p>
+
+	<h3>Media Query Syntax</h3>
+	<p> A media query starts with <b>@media</b> following <b>&#40;styling rule&#41;</b>. This is called a media feature which resolves to true or fals.</p> <img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/Media1.JPG?raw=true"> 
+
+	<p>If the media feature resolves to TRUE then the styles within the curly braces apply: <br><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/Media2.JPG?raw=true"></p>
+
+	<p> There is a number of media query features available: <br><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/Media3.JPG?raw=true"> <ul> <li> The most common being<b>&#40;max-width&#41;</b> and <b>&#40;min-width&#41;</b> </li> </ul></p>
+
+	<p> You can use logical operators to combine or separate media queries: <br><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/Media4.JPG?raw=true"> <ul> <li> For example, you can use<b>&#40;AND&#41;</b> and <b>&#40;OR&#41;</b> logical operators.</li> </ul></p>
+
+	<p> There is common approach to style media queries<br><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/Media5.JPG?raw=true"><ul> <li> You almost always start with a base style, then you start target some screen sizes by targeting some of the base style taking and adding things. It is important to have clear and seperate boundaries.</li> </ul></p>
+	
+</div>
+</div>
+</section>
+
+<p></p>
+
+<section id="RDesign" class="row">
+<div class="col-lg-3">
+<h2>Responsive Design</h2>
+<div>
+
+<h3>What is responsive design?</h3>
+<p> Responsive design came out of the need to handle the large growth of mobile devices able to browse the web. </p>
+
+<p>There are usually more mobile devices browsing the web. The question becomes which devices do you target and support? The answer is that all of them. If you fail to target and support all mobile devices, you lose a big chunk of users. And in order to do this, you use <i> responsive design </i>.</p>
+
+<p> Using responsive design, a site is designed to adapt its layout to the viewing enviroment bt using fluid, proportion-based grids, flexible images, and CSS3 media queries. </<img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/rdesign1.JPG?raw=true">
+<p> </p>
+<ul> 
+	<li>
+		The site's layout adapts to the size of device &#40;width and height&#41;.
+	</li>
+	<li>
+		Content verbosity or its visual delivery may change.
+	</li>
+
+</ul>
+<h3> Alternatives to responsive design?</h3>
+<p>Before responsive design was possible, you could use a service high technology that detects your user agent&#40;the browser being used&#41;. After it detects the user agent, the service will serve up either a desktop version of the site or a mobile version. </<img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/rdesign2.JPG?raw=true">
+<ul> 
+	<li>
+		This approach had some issues because developers would need to produce one mobile version of their website that fits every kind of device and would produce two versions of their website. This results in a poor user experience. This approach is rarely used today.
+	</li>
+</ul>
+<h3>The layout</h3>
+<p> The most common layout out there or responsive layout, is a <b>12-column grid responsive layout </b>, this is the same as Twitter bootsrap, and almost every responsive framework uses this nowadays.</p>
+<ul> 
+	<li>
+		12 is used because of factors of 12. It is evenly divisible by 1,2,3,4,6 and 12.
+	</li>
+</ul>
+
+<p> This allows to sub-divide the page into sections that are evenly spli<img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/rdesign3.JPG?raw=true"></p>
+
+<p> You can approach this layout using percentages, you can convert the 3 into 25%, 6 into 50%, 4 into 33.33</p><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/rdesign4.JPG?raw=true">
+
+<p> You can convert this layout using nested grids, e.g., this could be having each grid out of 4 being another 1</p><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/rdesign4.JPG?raw=true">
+
+
+</div>
+</div>
+</section>
+
+<p></p>
+<section id="Bootstrap" class="row">
+	<div class="col-lg-3">
+	<h2>Twitter Bootstrap</h2>
+			<div>
+				<h3>What is Bootstrap?</h3>
+				<p>
+					Bootstrap is the most commonly used HTML, CSS, and JS framework for developing responsibe mobile first projects on the web.
+				</p>
+				<p>
+					It consists mostly of CSS classes. Bootstrap often requires you to have a particular structure to your HTML code so that it can apply properly.
+				</p>
+				<p>
+					The term <i>mobile first</i> has two approaches, one is that you develop and plan for mobile in your styles, or it could mean that you can use a desktop first before adapting your page to mobile. Utimately, it means that you plan for mobile from the start. 
+				</p>
+
+				<h3>Complaints about Bootstrap</h3>
+				<p> Alot of features you will never use. However you can use selective dowload</p>
+				<p>You can write you own script that's more targeted/smaller. But it will take you a LOT longer to write it as well</p>
+
+				<h3>Using Bootstrap</h3>
+				<p>
+					You can find Bootstrap on this <a href ="https://getbootstrap.com/">webpage</a>.
+				</p>
+
+				<p>Notice you will also need to dowload a version of JQuery, you do this on this <a href="https://releases.jquery.com/">page</a></p>
+				<h3>Bootstrap Grid System Basics</h3>
+				<p>These are the components of the Bootstrap gid layout:</p>
+				<p>1. You Bootstrap grid always has to be inside a container or container-fluid</p>
+				<img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/grid1.JPG?raw=true">
+				<p>2. The row class creates horizontal groups of columns which means that the columns collapse and interact which each other as a group but independently from columns in another row.</p>
+				<img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/grid2.JPG?raw=true">
+				<p>3. The row class also creates a negative margin, to counteract the padding that the container class sets up. </p>
+				<img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/grid2.JPG?raw=true">
+
+				<p>Each column already has it's own padding, without negative margin, the content of the "class=row" would be pushed against the column margin.</p><img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/grid3.JPG?raw=true">
+
+				<p>Negative-margive allows the content inside the container to line up nicely</p>
+				<img src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/grid4.JPG?raw=true">
+
+				<h3>Column Class Definition</h3>
+
+				<p>Every Boot strap column class is defined using this template: <b>col-SIZE-SPAN</b>.</p>
+
+				<p>There are two main components of this template:</p>
+
+				<p>1. Size. The <b>SIZE</b> is the screen width range identifier and it's MD for medium,LG for large, and so on. There is more information in the Bootstrap documentation, but LG is defined as 1200px and above. So a minimum of 1200px.</p> 
+
+				<P>The columns will collapse, i.e., stack below that width. Unless another rule applies</p>
+
+
+				<p>2.Span. <b>SPAN</b>Specifies how many columns element should span values: 1 through 12. </p>If you start specifying more than 12 columns within the row, well they'll do what other floats do, is that they will wrap to the next row. But it won't be a row within Bootstrap, it will just basically wrap itself automatically. So the point is, if you're specifying a whole bunch of columns, the element that pushes the total sum of the spans above 12 will automatically wrap to the next line.</p>
+		
+	</div>
+</div>
+</section>
+</article>
+
+<footer> 
+
+<div>
+		There were some useful links and resources such codepen.io and jsfiddle.net
+	</div>
+
+
+</footer>
+<script src="jquery-3.6.4.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

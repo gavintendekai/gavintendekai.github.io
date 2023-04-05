@@ -173,7 +173,6 @@ p.dailypuzzle {
 	margin-left: 3em;
 }
 div.logo-container {
-	position: fixed;
 	margin-left: 50em;
     margin-top: 2em;
 	
@@ -206,6 +205,7 @@ p.welcome {
 
 div.hello {
 	font-size: 1.5em;
+	margin-left: -50.5em;
 }
 
 div.welcome-text {
@@ -214,7 +214,8 @@ div.welcome-text {
 	font-family: monospace;
 	font-size: 2.25em;
 	margin-top: -1em;
-	width: 80%;
+	width: 132%;
+	margin-left: -33.5em;
 
 
 }
@@ -278,14 +279,9 @@ div.projectcard {
 	margin-left: .2em;
 
 	}
-	div.welcome-text {
-		font-size: 1.6em;
-		width: 14em;
+	
 	}
-	section.mainarea {
-		margin-left: 1em;
 
-	}
 	div.Projects {
 		margin-left: -.5em;
 		font-size: 1.2em;
@@ -331,11 +327,7 @@ div.projectcard {
 	margin-left: -.2em;
 
 	}
-	div.welcome-text {
-		font-size: 2em;
-		width: 14em;
-		margin-left: -1.2em;
-	}
+	
 	section.mainarea {
 		margin-left: 1em;
 
