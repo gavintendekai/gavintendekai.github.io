@@ -2,173 +2,43 @@
 <html lang ="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Portfolio</title>
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<link rel="stylesheet" href="bootstrap.min.css">
+<!-- these are the libraries needed to run the nav bar collapse-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 <link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mouse+Memoirs">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <style>
 </style>
 </head>
 	<body>
-	<div>
-		<!--<div class = "logo-container">
-		<h1>gavintendekai.github.io</h1>
-		</div>-->
-		
+		<header>
+<!-- The nav is outsite the div "container" class because we want it to stretch all the way past the container-->
+<nav id="header-nav" class="navbar navbar-default">
+<div class="container">
 
-		<section class="mainarea">
+        <!-- This class "d-none d-md-block d-xl-none" displays the logo only on medium and large devices (Make sure to always reference Bootstrap Documentation) -->
+         <div class="navbar-header d-flex align-items-center"><a href="index.html"  class="d-none d-md-block d-xl-block"><div id="logo-img" class="float-start"></div></a>
+        
+        <div class="navbar-brand">
+            <a href="index.html"><h1>Gavin Tendekai Madanhi</h1></a>
+         </div>
+
+    </div> <!-- End of Container-->
+</nav><!-- End of NAV-HEADER-->
+<section class="mainarea">
 		<div class = "logo-container">
 		<img class="logo" src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/profile.png?raw=true">
+</header>
 		
-		</div>
-
-		
-		<section class = "Welcome">
-			<div>
-				<!--<p class="welcome"> Hi!</p> -->
-
-				<div class="hello">Hello, my name is</div>
-					<p class="welcome"> Gavin.</p>
-				<div class="welcome-text">
-					<p class="professionalsummary">I am passionate about using my knowledge and skills to create innovative UI/UX solutions that meet the needs of businesses and individuals alike.</p>
-				</div>
-
-				</div>
-			<p></p>
-		</section>
-		
-		</section>
-		<section>
-			
-			<div class="Projects">
-				<p> I am currently learning how to program using tools such as HTML, CSS, and Javascript. You can follow my progress by clicking <a href= "https://gavintendekai.github.io/Lesson%20Page/index.html">here</a></p>
-			</div>
-		</section>
-		<section id="socialmediasection">
-			<div class="socialmedia"> 
-
-					<span class="resume"><span class ="resume-text"><a href="https://github.com/gavintendekai/gavintendekai.github.io/blob/47a92cc3af580478d2250eb0925c7b192ff35113/Files/CV.pdf">Resume</a></span></span>
-
-					<a href= "https://in.linkedin.com"><img class="sc"src="https://raw.githubusercontent.com/gavintendekai/gavintendekai.github.io/439b9027ddb65cfa75dfcca4de5bfa55047aaa03/Images/LI-In-Bug.png"></a>
-		
-
-					<a href="https://www.chess.com/member/gavintendekai"><img class="sc" src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/chess.png?raw=true"></a>
-					
-					<a href="https://github.com/gavintendekai"><img class="sc" src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/github-mark.png?raw=true"></a>
-				</div>
-
-
-			</section>
-			<div 
-				id = "talkbubble1" 
-				data-aos="fade-up"  
-				data-aos-anchor=".socialmedia" 
-				easing = "ease-in-out-back"
-				data-aos-anchor-placement="bottom-center" 
-				data-aos-duration ="3000">
-				To visit my social media click the icons
-			</div>
-			
-		</section>
-		<section id = "ExSkills">
-			<div id="exp">
-				<p class="skill-text">Experience</p>
-				<p class="jobtitle">Administrative Assistant for the Senior Director of Health and Wellness</p>
-				<p class="date">
-				Flagler College, 08/2022 – 10/2022</p>
-				<p class="jobtitle"> Library Assistant</p>
-				<p class="date">Flagler College, 10/2021 – 04/2022</p>
-				<p class="jobtitle">Admissions Assistant</p>
-				<p class="date"> Flagler College, 08/2019 – 02/2021
-				</p>
-			</div>
-			<div id="skll">
-				<p class="skill-text">Skills</p>
-				<b>HTML</b>
-				<b>CSS</b>
-				<b>JavaScript</b>
-				<b>C++</b>
-				<b>SQL</b>
-			</div>
-			
-		</section>
-
-		<section id="projectsection">
-			<div class="wrapper">
-  				<nav class="lil-nav">
-  					<a href=
-  					"#image-1">
-    				<img class="lil-nav__img" 
-    				id="lil1" 
-    				src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/notebook.jpg?raw=true" 
-    				style=" display: block;
-    				max-width: 100%;">
-    				</a>
-  					<a href="#image-2">
-   					<img 
-   					class="lil-nav__img" 
-   					id="lil2" 
-   					src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/notebook.jpg?raw=true" 
-   					style=" display: block;
-    				max-width: 100%;"></a>
-  				</nav>
-  				<div class="gallery">
-  					<img class="gallery__img" id="image-1" src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/notebook.jpg?raw=true" style=" display: block;
-    				max-width: 100%;">
-  					<img class="gallery__img" id="image-2" src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/notebook.jpg?raw=true" style=" display: block;
-    				max-width: 100%;">
-    				<img class="gallery__img" id="image-3" src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/notebook.jpg?raw=true" style=" display: block;
-    				max-width: 100%;">
-    				<img class="gallery__img" id="image-4" src="https://github.com/gavintendekai/gavintendekai.github.io/blob/main/Images/notebook.jpg?raw=true" style=" display: block;
-    				max-width: 100%;">
-  				</div>
-			</div>
-			<div id = "talkbubble2" class="popup" data-aos="fade-up" data-aos-anchor-placement="bottom-center" data-aos-duration ="3000">Here are the projects I am currently working on</div>
-
-			<!--<div class="projectcard">
-				<h3 id ="project-header">Chess Stats</h3>
-				<div id="project-text">
-				I am working on a stat compiler for Chess.com. This project, using my own data, will involve trying to understand which types of move I play the most.
-				</div>
-			</div>
-			
-			<div class="projectcard">
-
-				<h3 id ="project-header">Calculator</h3>
-				<div id="project-text">I am working on a financial calculator. This will involve working a calcuculator for financial ratios and equations into a palatable form.</div>
-				
-			</div>
-			<div class="projectcard">
-
-				<h3 id ="project-header">Website</h3>
-				<div id="project-text">I am working on a financial calculator. This will involve working a calcuculator for financial ratios and equations into a palatable form.</div>
-				
-			</div>-->
-
-
-
-		</section>
-
-		<section> 
-
-						<p class = "dailypuzzle"></p>
-						<div class = "chesspuzzle">
-			  <iframe class="chessboard"  src="https://www.chess.com/daily_puzzle" frameborder="0"></iframe>
-			</div>
-
-			<div id = "talkbubble" class="popup" data-aos="fade-up" data-aos-anchor-placement="bottom-center" data-aos-duration ="3000">Want to solve a Chess puzzle?</div>
-			</section>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-   		 AOS.init({
-   		 	useClassNames: true,
-  initClassName: false,
-  animatedClassName: 'fade-out',
-
-   		 });
-
- </script>
- </div>
+	
 </body>
 </html>
