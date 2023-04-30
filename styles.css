@@ -1,3 +1,76 @@
+#logos {
+	height: 8em;
+	border-radius: 60%;
+	margin-right: 2em;
+}
+
+body {
+	font-family: "Bree Serif";
+}
+
+a {
+	color: black;
+	text-decoration: none;
+
+}
+p.summary-text {
+	text-align: center;
+	text-justify: center;
+}
+
+#summary {
+	margin-left: 8em;
+	padding: 2em;
+	width: 42em;
+}
+#logo-img {
+	margin-left: 10em;
+	position: relative;
+}
+#logos {
+	position: absolute;
+	margin-top: -4em;
+	margin-left: -8em;
+
+}
+div.socialmedia {
+	margin-left: 22em;
+}
+img.sc {
+	height: 3em;
+	width: 3em;
+}
+
+#title {
+	color: #35D2E4;
+	font-size: 1.5em;
+}
+
+
+
+@media (min-width: 800px) {
+ #title {
+	font-size: 2.8em;
+}
+
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 320px) & (max-width: 800px) {
+ #title {
+	font-size: 1em;
+
+}
+
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+	#title {
+	font-size: 3.5em;
+}
+}
 
 
 
