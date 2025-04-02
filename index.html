@@ -1,0 +1,63 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { motion } from "framer-motion";
+import { FaDribbble, FaBehance, FaLinkedin } from "react-icons/fa";
+
+export default function Portfolio() {
+  return (
+    <div className="min-h-screen bg-gray-100 p-10">
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-8"
+      >
+        <div className="text-center">
+          <h1 className="text-4xl font-bold text-gray-800">John Doe</h1>
+          <p className="text-gray-600 mt-2">UI/UX Designer | Creating Seamless Experiences</p>
+        </div>
+
+        <div className="mt-6 flex justify-center space-x-4">
+          <a href="#portfolio" className="text-gray-700 hover:text-gray-900">
+            <FaDribbble size={30} />
+          </a>
+          <a href="#portfolio" className="text-gray-700 hover:text-gray-900">
+            <FaBehance size={30} />
+          </a>
+          <a href="#portfolio" className="text-gray-700 hover:text-gray-900">
+            <FaLinkedin size={30} />
+          </a>
+        </div>
+
+        <h2 className="text-2xl font-semibold text-gray-800 mt-8">Featured Work</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+          <Card>
+            <CardContent className="p-4">
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Project 1"
+                className="w-full h-40 object-cover rounded-lg"
+              />
+              <h3 className="text-lg font-semibold mt-2">Project One</h3>
+              <p className="text-sm text-gray-600">A modern web design concept for an e-commerce platform.</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4">
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Project 2"
+                className="w-full h-40 object-cover rounded-lg"
+              />
+              <h3 className="text-lg font-semibold mt-2">Project Two</h3>
+              <p className="text-sm text-gray-600">A user-friendly mobile app for task management.</p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="text-center mt-8">
+          <Button className="px-6 py-2 text-lg">Contact Me</Button>
+        </div>
+      </motion.div>
+    </div>
+  );
